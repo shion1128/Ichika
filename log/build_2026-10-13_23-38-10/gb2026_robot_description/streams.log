@@ -1,0 +1,46 @@
+[0.020s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb2026_robot_description -Wno-dev --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS=-O3 -pipe -Wno-pragmas -Wno-unknown-pragmas -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description
+[0.027s] Not searching for unused variables given on the command line.
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.122s] -- The CXX compiler identification is GNU 11.4.0
+[0.127s] -- Detecting C compiler ABI info
+[0.182s] -- Detecting C compiler ABI info - done
+[0.188s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.189s] -- Detecting C compile features
+[0.190s] -- Detecting C compile features - done
+[0.192s] -- Detecting CXX compiler ABI info
+[0.245s] -- Detecting CXX compiler ABI info - done
+[0.249s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.249s] -- Detecting CXX compile features
+[0.249s] -- Detecting CXX compile features - done
+[0.253s] -- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.398s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.475s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.563s] -- Configuring done
+[0.565s] -- Generating done
+[0.565s] -- Build files have been written to: /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description
+[0.568s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb2026_robot_description -Wno-dev --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS=-O3 -pipe -Wno-pragmas -Wno-unknown-pragmas -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description
+[0.570s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description -- -j20 -l20
+[0.603s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description -- -j20 -l20
+[0.610s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description
+[0.614s] -- Install configuration: "Release"
+[0.615s] -- Execute custom install script
+[0.615s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/launch/robot_description_launch.py
+[0.622s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/params/robot_description.yaml
+[0.631s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/urdf/gb2026_r2_robot.urdf.xacro
+[0.639s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/rviz/visualize_robot.rviz
+[0.645s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/ament_index/resource_index/package_run_dependencies/gb2026_robot_description
+[0.654s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/ament_index/resource_index/parent_prefix_path/gb2026_robot_description
+[0.661s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/environment/ament_prefix_path.sh
+[0.670s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/environment/ament_prefix_path.dsv
+[0.675s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/environment/path.sh
+[0.681s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/environment/path.dsv
+[0.689s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/local_setup.bash
+[0.697s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/local_setup.sh
+[0.705s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/local_setup.zsh
+[0.712s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/local_setup.dsv
+[0.720s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/package.dsv
+[0.728s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/ament_index/resource_index/packages/gb2026_robot_description
+[0.736s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/cmake/gb2026_robot_descriptionConfig.cmake
+[0.743s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/cmake/gb2026_robot_descriptionConfig-version.cmake
+[0.750s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_robot_description/share/gb2026_robot_description/package.xml
+[0.759s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_robot_description

@@ -1,0 +1,125 @@
+/**:
+    ros__parameters:
+        use_imu_as_input: False                             # Change to True to use IMU as input of Point-LIO
+        prop_at_freq_of_imu: True
+        check_satu: True
+        init_map_size: 10
+        point_filter_num: 3                                 # Options: 4, 3
+        space_down_sample: True
+        filter_size_surf: 0.5                               # Options: 0.5, 0.3, 0.2, 0.15, 0.1
+        filter_size_map: 0.5                                # Options: 0.5, 0.3, 0.15, 0.1
+        ivox_nearby_type: 6                                 # Options: 0, 6, 18, 26
+        runtime_pos_log_enable: False                       # Option: True
+        use_imu_as_input: False                             # 是否将IMU作为预测输入 (Change to True to use IMU as input of Point-LIO)
+        prop_at_freq_of_imu: True                           # 是否按IMU频率进行传播
+        check_satu: True                                    # 是否检查IMU饱和
+        init_map_size: 10                                   # 初始地图大小
+        point_filter_num: 3                                 # 点云采样间隔 (Options: 4, 3)
+        space_down_sample: True                             # 是否开启空间降采样
+        filter_size_surf: 0.5                               # 平面点降采样尺寸 (Options: 0.5, 0.3, 0.2, 0.15, 0.1)
+        filter_size_map: 0.5                                # 地图降采样尺寸 (Options: 0.5, 0.3, 0.15, 0.1)
+        ivox_nearby_type: 6                                 # ivox附近搜索类型 (Options: 0, 6, 18, 26)
+        runtime_pos_log_enable: False                       # 是否启用运行时位置日志 (Option: True)
+
+        common:
+            lid_topic: "livox/lidar"
+            imu_topic: "livox/imu"
+            con_frame: False                                # True: if you need to combine several LiDAR frames into one
+            con_frame_num: 1                                # the number of frames combined
+            cut_frame: False                                # True: if you need to cut one LiDAR frame into several subframes
+            cut_frame_time_interval: 0.1                    # should be integral fraction of 1 / LiDAR frequency
+            time_diff_lidar_to_imu: 0.0                     # Time offset between LiDAR and IMU calibrated by other algorithms, e.g., LI-Init (find in Readme)
+            lid_topic: "livox/lidar"                        # 激光雷达topic
+            imu_topic: "livox/imu"                          # IMU topic
+            con_frame: False                                # 是否合并帧 (True: if you need to combine several LiDAR frames into one)
+            con_frame_num: 1                                # 合并帧数 (the number of frames combined)
+            cut_frame: False                                # 是否切割帧 (True: if you need to cut one LiDAR frame into several subframes)
+            cut_frame_time_interval: 0.1                    # 切割时间间隔 (should be integral fraction of 1 / LiDAR frequency)
+            time_diff_lidar_to_imu: 0.0                     # 雷达到IMU的时间偏移 (Time offset between LiDAR and IMU calibrated by other algorithms)
+
+        prior_pcd:
+            enable: False
+            prior_pcd_map_path: ""
+            init_pose: [ 0.0, 0.0, 0.0 ]
+            enable: False                                   # 是否启用先验地图
+            prior_pcd_map_path: ""                          # 先验地图路径
+            init_pose: [ 0.0, 0.0, 0.0 ]                    # 初始位姿
+
+        preprocess:
+            lidar_type: 1
+            scan_line: 6
+            timestamp_unit: 1                               # the unit of time/t field in the PointCloud2 rostopic: 0-second, 1-milisecond, 2-microsecond, 3-nanosecond.
+            blind: 4.0
+            lidar_type: 1                                   # 雷达类型 (1: Livox, 2: Velodyne, 3: Ouster)
+            scan_line: 6                                    # 扫描线数
+            timestamp_unit: 1                               # 时间戳单位 (0-sec, 1-ms, 2-us, 3-ns)
+            blind: 4.0                                      # 最小测量距离 (盲区)
+
+        mapping:
+            imu_en: True
+            extrinsic_est_en: False                         # for aggressive motion, set this variable False
+            imu_time_inte: 0.005                            # = 1 / frequency of IMU
+            lidar_time_inte: 0.1
+            satu_acc: 3.0                                   # the saturation value of IMU's acceleration. not related to the units
+            satu_gyro: 35.0                                 # the saturation value of IMU's angular velocity. not related to the units
+            acc_norm: 1.0                                   # 1.0 for g as unit, 9.81 for m/s^2 as unit of the IMU's acceleration
+            lidar_meas_cov: 0.01                            # 0.001
+            acc_cov_output: 500.0
+            gyr_cov_output: 1000.0
+            b_acc_cov: 0.0001
+            b_gyr_cov: 0.0001
+            imu_meas_acc_cov: 0.01                          # 0.1 # 2
+            imu_meas_omg_cov: 0.01                          # 0.1 # 2
+            gyr_cov_input: 0.01                             # for IMU as input model
+            acc_cov_input: 0.1                              # for IMU as input model
+            plane_thr: 0.1                                  # 0.05, the threshold for plane criteria, the smaller, the flatter a plane
+            match_s: 81.0
+            ivox_grid_resolution: 2.0
+            gravity: [0.0, 0.0, -9.810]                     # preknown gravity, use when imu_en is False or start from a non-stationary state
+            gravity_init: [0.0, 0.0, -9.810]                # preknown gravity in the initial IMU frame for unstationary start or in the initial LiDAR frame for using without IMU
+            imu_en: True                                    # 是否启用IMU
+            extrinsic_est_en: False                         # 是否启用在线外参估计 (for aggressive motion, set this variable False)
+            imu_time_inte: 0.005                            # IMU时间间隔 (1 / frequency of IMU)
+            lidar_time_inte: 0.1                            # 雷达时间间隔
+            satu_acc: 3.0                                   # 加速度饱和值 (the saturation value of IMU's acceleration)
+            satu_gyro: 35.0                                 # 角速度饱和值 (the saturation value of IMU's angular velocity)
+            acc_norm: 1.0                                   # 重力加速度单位 (1.0 for g as unit, 9.81 for m/s^2)
+            lidar_meas_cov: 0.01                            # 雷达测量协方差
+            acc_cov_output: 500.0                           # 加速度输出协方差
+            gyr_cov_output: 1000.0                          # 角速度输出协方差
+            b_acc_cov: 0.0001                               # 加速度零偏协方差
+            b_gyr_cov: 0.0001                               # 角速度零偏协方差
+            imu_meas_acc_cov: 0.01                          # IMU加速度测量协方差
+            imu_meas_omg_cov: 0.01                          # IMU角速度测量协方差
+            gyr_cov_input: 0.01                             # IMU作为输入时的角速度协方差
+            acc_cov_input: 0.1                              # IMU作为输入时的加速度协方差
+            plane_thr: 0.1                                  # 平面阈值 (the smaller, the flatter a plane)
+            match_s: 81.0                                   # 匹配系数
+            ivox_grid_resolution: 2.0                       # IVOX网格分辨率
+            gravity: [0.0, 0.0, -9.810]                     # 重力向量 (use when imu_en is False or start from a non-stationary state)
+            gravity_init: [0.0, 0.0, -9.810]                # 初始重力向量 (in the initial IMU frame for unstationary start)
+            extrinsic_T: [ 0.05512, 0.02226, -0.0297 ]
+            extrinsic_R: [ 1.0, 0.0, 0.0,
+                           0.0, 1.0, 0.0,
+                           0.0, 0.0, 1.0 ]
+
+        odometry:
+            publish_odometry_without_downsample: False
+            publish_odometry_without_downsample: False      # 是否发布未降采样的里程计
+
+        publish:
+            path_en: True                                   # False: close the path output
+            scan_publish_en: True                           # False: close all the point cloud output
+            scan_bodyframe_pub_en: False                    # True: output the point cloud scans in IMU-body-frame
+            tf_send_en: False                               # True: send transform from 'camera_init' to 'aft_mapped'
+            path_en: True                                   # 是否发布路径 (False: close the path output)
+            scan_publish_en: True                           # 是否发布点云 (False: close all the point cloud output)
+            scan_bodyframe_pub_en: False                    # 是否发布body系点云 (True: output the point cloud scans in IMU-body-frame)
+            tf_send_en: False                               # 是否发布TF (True: send transform from 'camera_init' to 'aft_mapped')
+
+        pcd_save:
+            pcd_save_en: False
+            interval: -1                                    # how many LiDAR frames saved in each pcd file;
+                                                            # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
+            pcd_save_en: False                              # 是否保存PCD文件
+            interval: -1                                    # PCD保存间隔 (-1 : all frames will be saved in ONE pcd file)

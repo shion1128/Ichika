@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation/sensor_scan_generation_node" "TARGETS" "sensor_scan_generation_node" "DESTINATION" "lib/sensor_scan_generation")

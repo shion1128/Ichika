@@ -1,0 +1,63 @@
+[0.008s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/sensor_scan_generation -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation
+[0.018s] -- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.106s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.185s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.187s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.192s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.201s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.211s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.237s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.239s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.326s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.437s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.466s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.714s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.720s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.839s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.843s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.848s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.959s] -- Found Qhull version 8.0.2
+[1.068s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.188s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.189s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.257s] -- Configuring done
+[1.290s] -- Generating done
+[1.297s] -- Build files have been written to: /home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation
+[1.307s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/sensor_scan_generation -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation
+[1.308s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation -- -j20 -l20
+[1.349s] Consolidate compiler generated dependencies of target sensor_scan_generation_node
+[1.353s] Consolidate compiler generated dependencies of target sensor_scan_generation
+[1.362s] [ 50%] Built target sensor_scan_generation_node
+[1.368s] [ 75%] Building CXX object CMakeFiles/sensor_scan_generation.dir/src/sensor_scan_generation.cpp.o
+[18.971s] [100%] Linking CXX shared library libsensor_scan_generation.so
+[19.341s] [100%] Built target sensor_scan_generation
+[19.349s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation -- -j20 -l20
+[19.358s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation
+[19.364s] -- Install configuration: "Release"
+[19.365s] -- Execute custom install script
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/lib/sensor_scan_generation/sensor_scan_generation_node
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/include/sensor_scan_generation/sensor_scan_generation/sensor_scan_generation.hpp
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/environment/library_path.sh
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/environment/library_path.dsv
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/lib/libsensor_scan_generation.so
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/launch/sensor_scan_generation.launch.py
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/ament_index/resource_index/package_run_dependencies/sensor_scan_generation
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/ament_index/resource_index/parent_prefix_path/sensor_scan_generation
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/environment/ament_prefix_path.sh
+[19.365s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/environment/ament_prefix_path.dsv
+[19.366s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/environment/path.sh
+[19.366s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/environment/path.dsv
+[19.366s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/local_setup.bash
+[19.366s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/local_setup.sh
+[19.366s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/local_setup.zsh
+[19.366s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/local_setup.dsv
+[19.366s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/package.dsv
+[19.372s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/ament_index/resource_index/packages/sensor_scan_generation
+[19.372s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/ament_index/resource_index/rclcpp_components/sensor_scan_generation
+[19.372s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.372s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.372s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/cmake/ament_cmake_export_libraries-extras.cmake
+[19.373s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/cmake/sensor_scan_generationConfig.cmake
+[19.373s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/cmake/sensor_scan_generationConfig-version.cmake
+[19.373s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/sensor_scan_generation/share/sensor_scan_generation/package.xml
+[19.374s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation

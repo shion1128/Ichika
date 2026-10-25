@@ -1,0 +1,55 @@
+[0.034s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner -Wno-dev --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS=-O3 -pipe -Wno-pragmas -Wno-unknown-pragmas -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner
+[0.043s] Not searching for unused variables given on the command line.
+[0.043s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.195s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.199s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.218s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.219s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.223s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.229s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.236s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.256s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.257s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.341s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.369s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.385s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.431s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.433s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.434s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.435s] -- Found gb_interfaces: 0.0.0 (/home/mika/GB_2026_Project/GB2026_R2_nav/install/gb_interfaces/share/gb_interfaces/cmake)
+[0.484s] -- Configuring done
+[0.492s] -- Generating done
+[0.495s] -- Build files have been written to: /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner
+[0.501s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner -Wno-dev --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS=-O3 -pipe -Wno-pragmas -Wno-unknown-pragmas -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner
+[0.502s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner -- -j20 -l20
+[0.543s] [35m[1mConsolidate compiler generated dependencies of target gb_topological_planner_node[0m
+[0.545s] [35m[1mConsolidate compiler generated dependencies of target gb_topological_planner[0m
+[0.552s] [ 50%] Built target gb_topological_planner_node
+[0.562s] [ 75%] [32mBuilding CXX object CMakeFiles/gb_topological_planner.dir/src/topological_planner.cpp.o[0m
+[0.584s] [100%] [32m[1mLinking CXX shared library libgb_topological_planner.so[0m
+[0.694s] [100%] Built target gb_topological_planner
+[0.706s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner -- -j20 -l20
+[0.707s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner
+[0.713s] -- Install configuration: "Release"
+[0.713s] -- Execute custom install script
+[0.713s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/gb_topological_planner/gb_topological_planner_node
+[0.713s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/config/topology_map.yaml
+[0.713s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/libgb_topological_planner.so
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/gb_topological_planner/gb_topological_planner_node
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/package_run_dependencies/gb_topological_planner
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/parent_prefix_path/gb_topological_planner
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/ament_prefix_path.sh
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/ament_prefix_path.dsv
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/path.sh
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/path.dsv
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.bash
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.sh
+[0.714s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.zsh
+[0.715s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.dsv
+[0.715s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.dsv
+[0.721s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/packages/gb_topological_planner
+[0.721s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/rclcpp_components/gb_topological_planner
+[0.721s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/cmake/gb_topological_plannerConfig.cmake
+[0.721s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/cmake/gb_topological_plannerConfig-version.cmake
+[0.721s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.xml
+[0.722s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner

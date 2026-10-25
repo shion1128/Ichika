@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d5254107630dfb3cdaf4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "serial_hardware_bridge",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "serial_hardware_bridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-serial_hardware_bridge-Release-06b2298b6a6566a5cddd.json",
+					"name" : "serial_hardware_bridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "serial_hardware_bridge_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-serial_hardware_bridge_node-Release-d8433ee24c9aaae473df.json",
+					"name" : "serial_hardware_bridge_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "serial_hardware_bridge_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-serial_hardware_bridge_uninstall-Release-5cb6147ff65e731b5f7e.json",
+					"name" : "serial_hardware_bridge_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-af195e43d62993121a22.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mika/pointlio_lidar/pointlio_lidar/build/serial_hardware_bridge",
+		"source" : "/home/mika/pointlio_lidar/pointlio_lidar/src/serial_hardware_bridge"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

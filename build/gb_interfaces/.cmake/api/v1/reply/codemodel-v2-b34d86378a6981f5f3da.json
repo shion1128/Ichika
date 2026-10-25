@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-fd0bab6654ca2c2633a7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "gb_interfaces__py",
+					"jsonFile" : "directory-gb_interfaces__py-Release-79acbfdd1df3c37aaea6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces/gb_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "gb_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_gb_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_gb_interfaces_egg-Release-40c14ae7b9ccb3246b4a.json",
+					"name" : "ament_cmake_python_build_gb_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_gb_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_gb_interfaces-Release-c0c11b69a07ed8d126d0.json",
+					"name" : "ament_cmake_python_symlink_gb_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces-Release-e9c89a7db0b6fd2bb52d.json",
+					"name" : "gb_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__cpp-Release-0011e0b4e2d6155ef7f5.json",
+					"name" : "gb_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gb_interfaces__py::@08d14055b6bb253bbe75",
+					"jsonFile" : "target-gb_interfaces__py-Release-4912fb36e7a028465acd.json",
+					"name" : "gb_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_generator_c-Release-67a3b74502052bbc8cfd.json",
+					"name" : "gb_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_generator_py-Release-8600f6e871e3fbd4b620.json",
+					"name" : "gb_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_typesupport_c-Release-34b7346fda7bcc1971bf.json",
+					"name" : "gb_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_typesupport_c__pyext-Release-892b5576cad54f064053.json",
+					"name" : "gb_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_typesupport_cpp-Release-587d0c9dd2b680cf1404.json",
+					"name" : "gb_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_typesupport_fastrtps_c-Release-2e4904bcf9b0d258d4ac.json",
+					"name" : "gb_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_typesupport_fastrtps_c__pyext-Release-fce7e14d7fde81b572f1.json",
+					"name" : "gb_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_typesupport_fastrtps_cpp-Release-21e718a2a7b113df21a2.json",
+					"name" : "gb_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_typesupport_introspection_c-Release-590a435a02d5325838f5.json",
+					"name" : "gb_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_typesupport_introspection_c__pyext-Release-f13672896e0a4acd0add.json",
+					"name" : "gb_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces__rosidl_typesupport_introspection_cpp-Release-894154627bce246b5241.json",
+					"name" : "gb_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_interfaces_uninstall-Release-40d809e4fb225b1687f8.json",
+					"name" : "gb_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-98b290e596cba5fecb82.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces",
+		"source" : "/home/mika/pointlio_lidar/pointlio_lidar/src/gb_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

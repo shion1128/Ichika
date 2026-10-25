@@ -1,0 +1,6 @@
+{
+  "package_name": "gb_interfaces",
+  "non_idl_tuples": [
+    "/home/mika/pointlio_lidar/pointlio_lidar/src/gb_interfaces:srv/GetTopologicalPath.srv"
+  ]
+}

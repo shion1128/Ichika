@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller/libgb_omni_pid_pursuit_controller.so" "TARGETS" "gb_omni_pid_pursuit_controller" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

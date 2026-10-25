@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-84d588db8bf39e3672ca.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "gb_omni_pid_pursuit_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_omni_pid_pursuit_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_omni_pid_pursuit_controller-Release-8c59e25515824b2e2e27.json",
+					"name" : "gb_omni_pid_pursuit_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_omni_pid_pursuit_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_omni_pid_pursuit_controller_node-Release-0e5663c898de26b60d3d.json",
+					"name" : "gb_omni_pid_pursuit_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gb_omni_pid_pursuit_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gb_omni_pid_pursuit_controller_uninstall-Release-ba351501c7a4eed42e7f.json",
+					"name" : "gb_omni_pid_pursuit_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-f0269aad6d173d010fcf.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller",
+		"source" : "/home/mika/pointlio_lidar/pointlio_lidar/src/gb_omni_pid_pursuit_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

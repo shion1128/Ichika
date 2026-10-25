@@ -1,0 +1,1 @@
+['-Wno-dev', '--no-warn-unused-cli', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_C_COMPILER_LAUNCHER=ccache', '-DCMAKE_CXX_COMPILER_LAUNCHER=ccache', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-DCMAKE_CXX_FLAGS=-O3 -pipe -Wno-pragmas -Wno-unknown-pragmas', '-DBUILD_TESTING=OFF', '-DAMENT_CMAKE_SYMLINK_INSTALL=1']

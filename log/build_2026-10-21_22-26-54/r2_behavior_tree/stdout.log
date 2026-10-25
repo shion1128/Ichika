@@ -1,0 +1,20 @@
+[100%] Built target r2_behavior_tree_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/lib/r2_behavior_tree/r2_behavior_tree_node
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/launch/bringup_BT_launch.py
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/ament_index/resource_index/package_run_dependencies/r2_behavior_tree
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/ament_index/resource_index/parent_prefix_path/r2_behavior_tree
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/environment/path.sh
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/environment/path.dsv
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/local_setup.bash
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/local_setup.sh
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/local_setup.zsh
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/local_setup.dsv
+-- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/package.dsv
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/ament_index/resource_index/packages/r2_behavior_tree
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/cmake/r2_behavior_treeConfig.cmake
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/cmake/r2_behavior_treeConfig-version.cmake
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/r2_behavior_tree/share/r2_behavior_tree/package.xml

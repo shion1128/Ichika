@@ -1,0 +1,4 @@
+source;share/gb2026_bringup/local_setup.bash
+source;share/gb2026_bringup/local_setup.dsv
+source;share/gb2026_bringup/local_setup.sh
+source;share/gb2026_bringup/local_setup.zsh

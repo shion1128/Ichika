@@ -1,0 +1,207 @@
+livox_ros_driver2:
+  ros__parameters:
+    xfer_format: 1                                      # 0-PointCloud2Msg(PointXYZRTL), 1-LivoxCustomMsg, 2-PclPxyziMsg, 3-LivoxImuMsg, 4-AllMsg
+    multi_topic: 0                                      # 0-All LiDARs share the same topic, 1-One LiDAR one topic
+    data_src: 0                                         # 0-lidar, others-Invalid data src
+    publish_freq: 10.0                                  # frequency of publish, 5.0, 10.0, 20.0, 50.0, etc.
+    output_data_type: 0
+    frame_id: livox_frame
+    user_config_path: $(find-pkg-share gb2026_bringup)/config/mid360_user_config.json
+    cmdline_input_bd_code: livox0000000001
+    lvx_file_path: ""
+
+
+loam_interface:
+  ros__parameters:
+    use_sim_time: False
+    state_estimation_topic: "aft_mapped_to_init"
+    registered_scan_topic: "cloud_registered"
+    odom_frame: "odom"
+    base_frame: "base_footprint"
+    lidar_frame: "imu_link"
+
+
+sensor_scan_generation:
+  ros__parameters:
+    use_sim_time: False
+    lidar_frame: "imu_link"
+    base_frame: "base_footprint"
+    robot_base_frame: "base_link"
+
+
+small_gicp_relocalization:
+  ros__parameters:
+    use_sim_time: False
+    num_threads: 4                                # GICP 算法在进行并行计算时使用的 CPU 线程数
+    num_neighbors: 15                             # 在为每个点估计协方差时，搜索的最近邻点的数量
+    global_leaf_size: 0.07                        # 全局先验地图的体素下采样网格尺寸 (米)。值越小，地图越稠密，但内存和计算开销越大。
+    registered_leaf_size: 0.07                   # 实时输入点云的体素下采样网格尺寸 (米)。
+    max_dist_sq: 0.8                              # GICP 匹配时用于剔除错误匹配的最大距离平方阈值。超过此距离的点对将被认为是外点 (Outlier)。
+    map_frame: "map"                              # 全局地图坐标系的名称
+    odom_frame: "odom"                            # 里程计坐标系的名称
+    base_frame: "base_footprint"                  # 机器人二维平面投影基座的坐标系名称
+    robot_base_frame: "base_link"                 # 机器人三维物理模型的坐标系名称
+    lidar_frame: "imu_link"                    # 激光雷达传感器的坐标系名称
+    init_pose: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]   # [x, y, z, roll, pitch, yaw] 节点启动时，机器人在 map 坐标系下的初始位姿猜测
+    input_cloud_topic: "registered_scan"          # 订阅的、需要进行重定位的实时点云话题名称
+    # The prior_pcd_file does not need to be specified since it going to be set by defaults in launch.
+    # prior_pcd_file: ""
+
+gb_omni_pid_pursuit_controller:
+  ros__parameters:
+    move_kp: 1.75                             # 机器人线速度控制的比例增益 (Proportional Gain) 1.1
+    move_ki: 0.0                              # 机器人线速度控制的积分增益 (Integral Gain)。通常用于消除稳态误差。
+    move_kd: 1.1                              # 机器人线速度控制的微分增益 (Derivative Gain)。用于抑制震荡、提高响应速度
+    lookahead_dist: 0.4                        # 纯追踪前视距离(米)。越大越早转向，越小越贴路径。建议 1.0~2.0
+    heading_kp: 2.85                          # 机器人航向角（旋转）控制的比例增益
+    heading_ki: 0.0                           # 机器人航向角控制的积分增益
+    heading_kd: 0.65                           # 机器人航向角控制的微分增益
+    approach_dist: 0.25                        # 接近目标点时的距离阈值 (米)。当机器人距离目标小于此值时，会开始减速。
+    min_approach_vel: 0.1                    # 接近目标点时允许的最小线速度 (米/秒)。防止在目标点附近完全停车造成停顿。
+    max_linear_vel_: 1.2                      # 最大线速度 (m/s)
+    max_angular_vel_: 1.85                     # ★ 最大角速度 (rad/s)，默认1.0，调大转更快
+    max_accel_: 0.75                           # ★ 加速度上限 (m/s²)，防止速度突变
+    xy_goal_tolerance: 0.012                  # ★ 平地位置容差(米)
+    yaw_goal_tolerance: 0.02                 # ★ 平地航向容差(rad), ~0.57°
+    settle_ticks: 4                          # ★ 平地稳定拍数, 7拍=140ms
+
+point_lio:
+  ros__parameters:
+    use_imu_as_input: False                             # 是否将IMU作为预测输入 (Change to True to use IMU as input of Point-LIO)
+    prop_at_freq_of_imu: True                           # 是否按IMU频率进行传播
+    check_satu: True                                    # 是否检查IMU饱和
+    init_map_size: 10                                   # 初始地图大小
+    point_filter_num: 8                                 # 点云采样间隔 (Options: 4, 3)
+    space_down_sample: True                             # 是否开启空间降采样
+    filter_size_surf: 0.5                               # 平面点降采样尺寸 (Options: 0.5, 0.3, 0.2, 0.15, 0.1)
+    filter_size_map: 0.3                                # 地图降采样尺寸 (Options: 0.5, 0.3, 0.15, 0.1)
+    ivox_nearby_type: 18                                 # ivox附近搜索类型 (Options: 0, 6, 18, 26)
+    runtime_pos_log_enable: False                       # 是否启用运行时位置日志 (Option: True)
+
+    common:
+      lid_topic: "livox/lidar"                        # 激光雷达topic
+      imu_topic: "livox/imu"                          # IMU topic
+      con_frame: False                                # 是否合并帧 (True: if you need to combine several LiDAR frames into one)
+      con_frame_num: 1                                # 合并帧数 (the number of frames combined)
+      cut_frame: False                                # 是否切割帧 (True: if you need to cut one LiDAR frame into several subframes)
+      cut_frame_time_interval: 0.05                    # 切割时间间隔 (should be integral fraction of 1 / LiDAR frequency)
+      time_diff_lidar_to_imu: 0.0                     # 雷达到IMU的时间偏移 (Time offset between LiDAR and IMU calibrated by other algorithms)
+
+    prior_pcd:
+      enable: False                                   # 是否启用先验地图
+      prior_pcd_map_path: "src/point_lio/PCD/scans.pcd" # 先验地图路径
+      init_pose: [ 0.0, 0.0, 0.0 ]                    # 初始位姿
+
+    preprocess:
+      lidar_type: 1                                   # 雷达类型 (1: Livox, 2: Velodyne, 3: Ouster)
+      scan_line: 4                                    # 扫描线数
+      timestamp_unit: 3                               # 时间戳单位 (0-sec, 1-ms, 2-us, 3-ns)
+      blind: 0.76                                      # 最小测量距离 (盲区)
+
+    mapping:
+      imu_en: True                                    # 是否启用IMU
+      extrinsic_est_en: False                         # 是否启用在线外参估计 (for aggressive motion, set this variable False)
+      imu_time_inte: 0.005                            # IMU时间间隔 (1 / frequency of IMU)
+      lidar_time_inte: 0.1                            # 雷达时间间隔
+      satu_acc: 4.0                                   # 加速度饱和值 (the saturation value of IMU's acceleration)
+      satu_gyro: 35.0                                 # 角速度饱和值 (the saturation value of IMU's angular velocity)
+      acc_norm: 1.0                                   # 重力加速度单位 (1.0 for g as unit, 9.81 for m/s^2)
+      lidar_meas_cov: 0.01                            # 雷达测量协方差
+      acc_cov_output: 515.0                           # 加速度输出协方差 
+      gyr_cov_output: 1005.0                          # 角速度输出协方差
+      b_acc_cov: 5.368e-5                              # 加速度零偏协方差
+      b_gyr_cov: 1.915e-8                               # 角速度零偏协方差
+      imu_meas_acc_cov: 3.1255e-2                          # IMU加速度测量协方差
+      imu_meas_omg_cov: 6.7154e-6                          # IMU角速度测量协方差
+      gyr_cov_input: 0.01                             # IMU作为输入时的角速度协方差
+      acc_cov_input: 0.1                              # IMU作为输入时的加速度协方差
+      plane_thr: 0.1                                  # 平面阈值 (the smaller, the flatter a plane)
+      match_s: 81.0                                   # 匹配系数
+      ivox_grid_resolution: 0.5                       # IVOX网格分辨率
+      gravity: [ 0.0, 0.0, -9.810 ]                   # 重力向量 (use when imu_en is False or start from a non-stationary state)
+      gravity_init: [ 0.0, 0.0, -9.810 ]              # 初始重力向量 (in the initial IMU frame for unstationary start)
+      extrinsic_T: [ 0.011, 0.02329, -0.04412 ]
+      extrinsic_R: [ 1.0, 0.0, 0.0,
+                      0.0, 1.0, 0.0,
+                      0.0, 0.0, 1.0 ]
+
+    odometry:
+      publish_odometry_without_downsample: False      # 是否发布未降采样的里程计
+
+    publish:
+      path_en: False                                   # 是否发布路径 (False: close the path output)
+      scan_publish_en: True                           # 是否发布点云 (False: close all the point cloud output)
+      scan_bodyframe_pub_en: False                    # 是否发布body系点云 (True: output the point cloud scans in IMU-body-frame)
+      tf_send_en: False                               # 是否发布TF (True: send transform from 'camera_init' to 'aft_mapped')
+
+    pcd_save:
+      pcd_save_en: False                               # 是否保存PCD文件
+      interval: -1                                    # PCD保存间隔 (-1 : all frames will be saved in ONE pcd file)
+      dir: "src/gb2026_bringup/pcd"    # <--- 你现在可以把地图指派到任何你想去的地方了！
+
+
+
+fast_lio:
+  ros__parameters:
+    # ===================== 基础与全局参数 =====================
+    feature_extract_enable: false         # 是否开启特征提取。FAST-LIO 是直接匹配原始点云的，不提取线/面特征，因此通常设为 false
+    point_filter_num: 3                   # 点云空间降采样间隔（每隔几个点取一个）。数值越大降采样越多，处理越快但精度可能下降
+    max_iteration: 7                      # 迭代误差状态卡尔曼滤波 (IESKF) 的最大迭代次数
+    filter_size_surf: 0.2                 # 当前帧点云（面点）的体素滤波网格大小 (米)。0.2表示20cm的网格
+    filter_size_map: 0.2                  # 局部/全局地图的体素滤波网格大小 (米)
+    cube_side_length: 300.0              # ikd-Tree (增量式kd树) 维护的局部地图空间立方体边长大小 (米)
+    runtime_pos_log_enable: false         # 是否在运行时输出位姿日志文件 (通常用于调试和精度评估)
+    map_file_path: "src/gb2026_bringup/pcd/fast_lio_scans.pcd" # 最终保存 PCD 地图的绝对路径
+
+    common:
+      # ===================== 话题与时间同步 =====================
+      lid_topic:  "/livox/lidar"        # 订阅的雷达点云话题名称 (Livox 自定义消息格式)
+      imu_topic:  "/livox/imu"          # 订阅的 IMU 数据话题名称
+      time_sync_en: false               # 是否开启软时间同步。仅在硬件时间未同步时开启（MID360内置IMU，硬件已经严格同步，所以填 false）
+      time_offset_lidar_to_imu: 0.0     # 雷达到IMU的时间偏移量。若硬件未同步可通过其他标定算法算出来填这里。这里严格同步填 0.0 即可
+
+    preprocess:
+      # ===================== 预处理参数 =====================
+      lidar_type: 1                     # 雷达类型: 1代表Livox, 2代表Velodyne, 3代表Ouster, 4代表通用点云
+      scan_line:  4                     # 雷达扫描线数 (Livox MID360 习惯上配置为4或6即可)
+      blind: 0.78                        # 盲区距离 (米)。距离雷达小于此值 (50cm) 的噪点或车体自身的点将被直接过滤掉
+      timestamp_unit: 3                 # 点云时间戳的单位: 0-秒(s), 1-毫秒(ms), 2-微秒(us), 3-纳秒(ns)
+      scan_rate: 10                     # 雷达的工作频率 (Hz)。MID360 默认通常为 10Hz
+
+    mapping:
+        # ===================== 建图与优化参数 =====================
+        acc_cov: 0.1                      # IMU 加速度计的测量噪声协方差
+        gyr_cov: 0.1                      # IMU 陀螺仪的测量噪声协方差
+        b_acc_cov: 0.0001                 # IMU 加速度计零偏(Bias)的随机游走噪声协方差
+        b_gyr_cov: 0.0001                 # IMU 陀螺仪零偏(Bias)的随机游走噪声协方差
+        fov_degree:    360.0              # 雷达的水平视场角。MID360 是全景雷达，故为 360度
+        det_range:     100.0              # 雷达的最大有效探测距离 (米)。超过此距离的点通常不可靠，会被剔除
+        extrinsic_est_en:  true           # 是否开启外参(Extrinsic)的在线优化估计。如果初始外参不准，开启后算法运行一段时间会自动微调
+        extrinsic_T: [ -0.011, -0.02329, 0.04412 ] # 雷达到 IMU 的平移外参 [tx, ty, tz] (极其重要，单位：米)
+        extrinsic_R: [ 1., 0., 0.,        # 雷达到 IMU 的旋转外参矩阵 (3x3旋转矩阵的展开) (极其重要)
+                        0., 1., 0.,
+                        0., 0., 1.]
+
+    publish:
+      # ===================== 发布选项 =====================
+      path_en: true                     # 是否发布机器人的历史轨迹 (nav_msgs/Path)
+      effect_map_en: false              # 是否发布有效特征点地图 (仅供调试用)
+      map_en: true                      # 是否发布全局增量点云地图 (用于在 Rviz 中观看建图效果)
+      scan_publish_en:  true            # 是否发布当前处理完的单帧点云
+      dense_publish_en: false           # 是否稠密发布。设为 false 会发布降采样后的点云，节省通信带宽
+      scan_bodyframe_pub_en: true       # 是否发布转换到机器人本体坐标系 (IMU Body 坐标系) 下的当前帧点云
+      tf_send_en: false                 # 是否由 FAST-LIO 自己发送 TF 树 (Odom -> Body)。因为通常会有单独的状态估计算法或 robot_localization 来发，为防冲突这里设为 false
+
+    pcd_save:
+      # ===================== PCD 文件保存 =====================
+      pcd_save_en: true                 # 是否在节点退出时保存 PCD 点云地图文件
+      interval: -1                      # 每隔多少个雷达帧保存一次文件。-1 表示最后合并成一个大文件保存 (若建图范围特别大，可能会爆内存)
+
+# ===================== 拓扑规划器 =====================
+topological_planner:
+  ros__parameters:
+    # ★ 切换地图: topology_map_zones.yaml (合并 Zone1+Zone2) / topology_map.yaml (新版) / topolog_area1.yaml (旧版 legacy)
+    map_path: "/home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner/config/topology_map.yaml"
+    # ★ 最近航点搜索时排除的节点 (起点不应被选为最近点)
+    excluded_start_nodes: ["start_zone"]
+

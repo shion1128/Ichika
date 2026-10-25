@@ -1,0 +1,70 @@
+# topology_map.yaml
+topological_map:
+  # 1. 定义所有航点及其物理坐标
+  nodes:
+    start_zone: {x: 0.0, y: 0.0}
+    spot_1: {x: 2.0, y: 0.0, yaw: 0.0}
+    spot_2: {x: 2.0, y: 0.7, yaw: 0.0}
+    spot_3: {x: 0.0, y: 0.7, yaw: 0.0}
+    spot_4: {x: 0.0, y: 0.0, yaw: 0.0}
+    spot_5: {x: 5.1, y: 0.0, yaw: 0.0} # 添加 XML 中请求的目标点（请替换为实际的充坐标）
+
+
+  # 2. 定义连通性 (无向图的边)
+  # 只有在这里连起来的点，机器人才被允许在它们之间移动
+  # 规则：相连的两点之间的直线上不能有障碍物！
+  edges:
+    - [start_zone, spot_1]
+    - [spot_1, spot_2]
+    - [spot_2, spot_3]
+    - [spot_3, spot_4]
+    - [spot_4, spot_5]
+
+
+
+# # topology_map.yaml
+# topological_map:
+#   # 1. 定义所有航点及其物理坐标
+#   nodes:
+#     start_zone: {x: 0.0, y: 0.0}
+#     crossroad_1: {x: 2.0, y: 0.2}
+#     crossroad_2: {x: 2.0, y: 0.0}
+#     weapon_zone: {x: 4.0, y: 0.3}
+#     merlin_zone: {x: 0.5, y: 0.0}
+#     ChargingStation: {x: 3.0, y: 0.0} # 添加 XML 中请求的目标点（请替换为实际的充坐标）
+
+#   # 2. 定义连通性 (无向图的边)
+#   # 只有在这里连起来的点，机器人才被允许在它们之间移动
+#   # 规则：相连的两点之间的直线上不能有障碍物！
+#   edges:
+#     - [start_zone, crossroad_1]
+#     - [crossroad_1, crossroad_2]
+#     - [crossroad_2, weapon_zone]
+#     - [crossroad_2, merlin_zone]
+#     - [start_zone, merlin_zone]
+#     - [start_zone, ChargingStation] # 让充电站与起始区连通
+
+
+# # topology_map.yaml
+# topological_map:
+#   # 1. 定义所有航点及其物理坐标
+#   nodes:
+#     start_zone: {x: 0.0, y: 0.0}
+#     crossroad_1: {x: 2.0, y: 1.0}
+#     crossroad_2: {x: 4.0, y: 2.0}
+#     weapon_zone: {x: 6.0, y: 3.0}
+#     merlin_zone: {x: 4.0, y: 0.0}
+#     ChargingStation: {x: 0.0, y: 0.5} # 添加 XML 中请求的目标点（请替换为实际的充坐标）
+
+
+#   # 2. 定义连通性 (无向图的边)
+#   # 只有在这里连起来的点，机器人才被允许在它们之间移动
+#   # 规则：相连的两点之间的直线上不能有障碍物！ 
+#   edges:
+#     - [start_zone, crossroad_1]
+#     - [crossroad_1, crossroad_2]
+#     - [crossroad_2, weapon_zone]
+#     - [weapon_zone, merlin_zone]
+#     - [merlin_zone, ChargingStation]
+
+

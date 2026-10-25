@@ -1,0 +1,24 @@
+<root main_tree_to_execute="MainTree">
+  <!--
+      r2_tree.xml — 带楼梯检测的导航行为树
+
+      使用方式: <GetTopologicalPath target_waypoint="目标航点名" path="{planned_path}" />
+      
+      测试场景:
+        平地导航: 多个航点互通进行移动
+    -->
+  <BehaviorTree ID="MainTree">
+    <Fallback name="GraspThenExit">
+      <Sequence>
+        <GetTopologicalPath target_waypoint="spot_1" path="{planned_path}" />
+        <MoveChassis path="{planned_path}" />
+        <GetTopologicalPath target_waypoint="spot_2" path="{planned_path}" />
+        <MoveChassis path="{planned_path}" />
+        <GetTopologicalPath target_waypoint="spot_3" path="{planned_path}" />
+        <MoveChassis path="{planned_path}" />
+        <GetTopologicalPath target_waypoint="spot_4" path="{planned_path}" />
+        <MoveChassis path="{planned_path}" />
+      </Sequence>
+    </Fallback>
+  </BehaviorTree>
+</root>

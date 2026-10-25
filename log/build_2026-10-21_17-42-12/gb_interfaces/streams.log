@@ -1,0 +1,122 @@
+[0.035s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces -- -j20 -l20
+[0.082s] [  3%] Built target gb_interfaces__cpp
+[0.088s] [ 12%] Built target gb_interfaces__rosidl_generator_c
+[0.100s] [ 12%] Built target ament_cmake_python_symlink_gb_interfaces
+[0.125s] [ 22%] Built target gb_interfaces__rosidl_typesupport_fastrtps_c
+[0.125s] [ 48%] Built target gb_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.125s] [ 51%] Built target gb_interfaces__rosidl_typesupport_cpp
+[0.125s] [ 32%] Built target gb_interfaces__rosidl_typesupport_introspection_c
+[0.131s] [ 61%] Built target gb_interfaces__rosidl_typesupport_c
+[0.132s] [ 70%] Built target gb_interfaces__rosidl_typesupport_introspection_cpp
+[0.153s] [ 70%] Built target gb_interfaces
+[0.182s] [ 74%] Built target gb_interfaces__py
+[0.202s] [ 80%] Built target gb_interfaces__rosidl_generator_py
+[0.224s] [ 87%] Built target gb_interfaces__rosidl_typesupport_c__pyext
+[0.224s] [ 93%] Built target gb_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.226s] [100%] Built target gb_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.312s] running egg_info
+[0.312s] writing gb_interfaces.egg-info/PKG-INFO
+[0.312s] writing dependency_links to gb_interfaces.egg-info/dependency_links.txt
+[0.312s] writing top-level names to gb_interfaces.egg-info/top_level.txt
+[0.314s] reading manifest file 'gb_interfaces.egg-info/SOURCES.txt'
+[0.314s] writing manifest file 'gb_interfaces.egg-info/SOURCES.txt'
+[0.335s] [100%] Built target ament_cmake_python_build_gb_interfaces_egg
+[0.345s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces -- -j20 -l20
+[0.346s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces
+[0.354s] -- Install configuration: "Release"
+[0.354s] -- Execute custom install script
+[0.354s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/ament_index/resource_index/rosidl_interfaces/gb_interfaces
+[0.354s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__functions.h
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__struct.h
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__type_support.h
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/get_topological_path.h
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/environment/library_path.sh
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/environment/library_path.dsv
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__rosidl_typesupport_fastrtps_c.h
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__builder.hpp
+[0.355s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__struct.hpp
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__traits.hpp
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__type_support.hpp
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/get_topological_path.hpp
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__rosidl_typesupport_fastrtps_cpp.hpp
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__rosidl_typesupport_introspection_c.h
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/include/gb_interfaces/gb_interfaces/srv/detail/get_topological_path__rosidl_typesupport_introspection_cpp.hpp
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/environment/pythonpath.sh
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/environment/pythonpath.dsv
+[0.356s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/__init__.py
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/_gb_interfaces_s.ep.rosidl_typesupport_c.c
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/_gb_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/_gb_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/gb_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/gb_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/gb_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/libgb_interfaces__rosidl_generator_py.so
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/srv/__init__.py
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/srv/_get_topological_path.py
+[0.357s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/srv/_get_topological_path_s.c
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/gb_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/gb_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/gb_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/srv/GetTopologicalPath.idl
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/srv/GetTopologicalPath.srv
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/srv/GetTopologicalPath_Request.msg
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/srv/GetTopologicalPath_Response.msg
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/ament_index/resource_index/package_run_dependencies/gb_interfaces
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/ament_index/resource_index/parent_prefix_path/gb_interfaces
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/environment/ament_prefix_path.sh
+[0.358s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/environment/ament_prefix_path.dsv
+[0.359s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/environment/path.sh
+[0.359s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/environment/path.dsv
+[0.359s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/local_setup.bash
+[0.359s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/local_setup.sh
+[0.359s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/local_setup.zsh
+[0.359s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/local_setup.dsv
+[0.359s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/package.dsv
+[0.368s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/ament_index/resource_index/packages/gb_interfaces
+[0.368s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.368s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.368s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.368s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.369s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.369s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.369s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.369s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfacesConfig.cmake
+[0.369s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfacesConfig-version.cmake
+[0.369s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/package.xml
+[0.370s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/lib/libgb_interfaces__rosidl_generator_c.so
+[0.370s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/lib/libgb_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.371s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/lib/libgb_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.371s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/lib/libgb_interfaces__rosidl_typesupport_introspection_c.so
+[0.371s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/lib/libgb_interfaces__rosidl_typesupport_c.so
+[0.371s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/lib/libgb_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.371s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/lib/libgb_interfaces__rosidl_typesupport_cpp.so
+[0.398s] Listing '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces'...
+[0.398s] Listing '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/local/lib/python3.10/dist-packages/gb_interfaces/srv'...
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/lib/libgb_interfaces__rosidl_generator_py.so
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/export_gb_interfaces__rosidl_generator_cExport.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/export_gb_interfaces__rosidl_generator_cExport-release.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/export_gb_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/export_gb_interfaces__rosidl_typesupport_fastrtps_cExport-release.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/export_gb_interfaces__rosidl_generator_cppExport.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/export_gb_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/export_gb_interfaces__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfaces__rosidl_typesupport_introspection_cExport-release.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfaces__rosidl_typesupport_cExport.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfaces__rosidl_typesupport_cExport-release.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfaces__rosidl_typesupport_introspection_cppExport-release.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfaces__rosidl_typesupport_cppExport.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/gb_interfaces__rosidl_typesupport_cppExport-release.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/export_gb_interfaces__rosidl_generator_pyExport.cmake
+[0.401s] -- Up-to-date: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_interfaces/share/gb_interfaces/cmake/export_gb_interfaces__rosidl_generator_pyExport-release.cmake
+[0.403s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces

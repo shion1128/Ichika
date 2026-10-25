@@ -1,0 +1,1 @@
+/home/mika/pointlio_lidar/pointlio_lidar/build/serial_hardware_bridge/ament_cmake_core/serial_hardware_bridgeConfig-version.cmake

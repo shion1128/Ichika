@@ -1,0 +1,333 @@
+[0.084s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'gb_omni_pid_pursuit_controller', 'gb_topological_planner', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF']
+[0.084s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['gb_omni_pid_pursuit_controller', 'gb_topological_planner'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73535f069720>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73535f1da4d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73535f1da4d0>>)
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.206s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.206s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.206s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.206s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.206s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.206s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mika/pointlio_lidar/pointlio_lidar'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_bringup) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_bringup) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_bringup) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_bringup) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_bringup) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_bringup) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_bringup) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_bringup) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gb2026_bringup' with type 'ros.ament_cmake' and name 'gb2026_bringup'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_robot_description) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_robot_description) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_robot_description) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_robot_description) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_robot_description) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_robot_description) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_robot_description) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb2026_robot_description) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gb2026_robot_description' with type 'ros.ament_cmake' and name 'gb2026_robot_description'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_interfaces) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_interfaces) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_interfaces) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_interfaces) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_interfaces) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_interfaces) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_interfaces) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_interfaces) by extension 'ros'
+[0.217s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gb_interfaces' with type 'ros.ament_cmake' and name 'gb_interfaces'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_omni_pid_pursuit_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_omni_pid_pursuit_controller) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_omni_pid_pursuit_controller) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_omni_pid_pursuit_controller) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_omni_pid_pursuit_controller) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_omni_pid_pursuit_controller) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_omni_pid_pursuit_controller) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_omni_pid_pursuit_controller) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_omni_pid_pursuit_controller) by extension 'ros'
+[0.218s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gb_omni_pid_pursuit_controller' with type 'ros.ament_cmake' and name 'gb_omni_pid_pursuit_controller'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_topological_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_topological_planner) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_topological_planner) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_topological_planner) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_topological_planner) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_topological_planner) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_topological_planner) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_topological_planner) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/gb_topological_planner) by extension 'ros'
+[0.218s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gb_topological_planner' with type 'ros.ament_cmake' and name 'gb_topological_planner'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/livox_ros_driver2) by extension 'ros'
+[0.219s] DEBUG:colcon.colcon_core.package_identification:Package 'src/livox_ros_driver2' with type 'ros.ament_cmake' and name 'livox_ros_driver2'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/loam_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/loam_interface) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/loam_interface) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/loam_interface) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/loam_interface) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/loam_interface) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/loam_interface) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/loam_interface) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/loam_interface) by extension 'ros'
+[0.220s] DEBUG:colcon.colcon_core.package_identification:Package 'src/loam_interface' with type 'ros.ament_cmake' and name 'loam_interface'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_lio) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_lio) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_lio) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_lio) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_lio) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_lio) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_lio) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_lio) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_lio) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/point_lio' with type 'ros.ament_cmake' and name 'point_lio'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2_behavior_tree) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2_behavior_tree) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2_behavior_tree) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2_behavior_tree) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2_behavior_tree) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2_behavior_tree) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2_behavior_tree) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2_behavior_tree) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/r2_behavior_tree) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/r2_behavior_tree' with type 'ros.ament_cmake' and name 'r2_behavior_tree'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_scan_generation) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_scan_generation) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_scan_generation) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_scan_generation) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_scan_generation) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_scan_generation) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_scan_generation) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_scan_generation) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_scan_generation) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_scan_generation' with type 'ros.ament_cmake' and name 'sensor_scan_generation'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_hardware_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_hardware_bridge) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_hardware_bridge) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_hardware_bridge) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_hardware_bridge) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_hardware_bridge) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_hardware_bridge) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_hardware_bridge) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_hardware_bridge) by extension 'ros'
+[0.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_hardware_bridge' with type 'ros.ament_cmake' and name 'serial_hardware_bridge'
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.243s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gb2026_bringup' in 'src/gb2026_bringup'
+[0.243s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gb2026_robot_description' in 'src/gb2026_robot_description'
+[0.243s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gb_interfaces' in 'src/gb_interfaces'
+[0.243s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'livox_ros_driver2' in 'src/livox_ros_driver2'
+[0.243s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'loam_interface' in 'src/loam_interface'
+[0.243s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sensor_scan_generation' in 'src/sensor_scan_generation'
+[0.243s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'serial_hardware_bridge' in 'src/serial_hardware_bridge'
+[0.243s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'point_lio' in 'src/point_lio'
+[0.243s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'r2_behavior_tree' in 'src/r2_behavior_tree'
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.246s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 19 installed packages in /home/mika/GB_2026_Project/GB2026_R2_nav/install
+[0.246s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 390 installed packages in /opt/ros/humble
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.275s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'gb_omni_pid_pursuit_controller' is in: /home/mika/GB_2026_Project/GB2026_R2_nav/install/gb_omni_pid_pursuit_controller
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding gb_omni_pid_pursuit_controller
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_omni_pid_pursuit_controller' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF']'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_omni_pid_pursuit_controller' build argument 'cmake_target' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_omni_pid_pursuit_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_omni_pid_pursuit_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_omni_pid_pursuit_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_omni_pid_pursuit_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_omni_pid_pursuit_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_omni_pid_pursuit_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_omni_pid_pursuit_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'gb_omni_pid_pursuit_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller', 'merge_install': False, 'path': '/home/mika/pointlio_lidar/pointlio_lidar/src/gb_omni_pid_pursuit_controller', 'symlink_install': True, 'test_result_base': None}
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_topological_planner' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF']'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_topological_planner' build argument 'cmake_target' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_topological_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_topological_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_topological_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_topological_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_topological_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_topological_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'gb_topological_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'gb_topological_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release', '-DBUILD_TESTING=OFF'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner', 'merge_install': False, 'path': '/home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner', 'symlink_install': True, 'test_result_base': None}
+[0.276s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.277s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.277s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mika/pointlio_lidar/pointlio_lidar/src/gb_omni_pid_pursuit_controller' with build type 'ament_cmake'
+[0.277s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mika/pointlio_lidar/pointlio_lidar/src/gb_omni_pid_pursuit_controller'
+[0.279s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.279s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.279s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.282s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner' with build type 'ament_cmake'
+[0.282s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner'
+[0.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb_omni_pid_pursuit_controller -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller
+[0.289s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner
+[0.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb_omni_pid_pursuit_controller -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller
+[0.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller -- -j20 -l20
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner
+[0.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner -- -j20 -l20
+[8.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner -- -j20 -l20
+[8.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner
+[8.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller -- -j20 -l20
+[8.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller
+[8.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gb_topological_planner)
+[8.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner
+[8.622s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner' for CMake module files
+[8.623s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner' for CMake config files
+[8.623s] Level 1:colcon.colcon_core.shell:create_environment_hook('gb_topological_planner', 'cmake_prefix_path')
+[8.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/cmake_prefix_path.ps1'
+[8.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/cmake_prefix_path.dsv'
+[8.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/cmake_prefix_path.sh'
+[8.625s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib'
+[8.625s] Level 1:colcon.colcon_core.shell:create_environment_hook('gb_topological_planner', 'ld_library_path_lib')
+[8.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/ld_library_path_lib.ps1'
+[8.626s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/ld_library_path_lib.dsv'
+[8.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/ld_library_path_lib.sh'
+[8.627s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/bin'
+[8.627s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/pkgconfig/gb_topological_planner.pc'
+[8.627s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/python3.10/site-packages'
+[8.627s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/bin'
+[8.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.ps1'
+[8.628s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.dsv'
+[8.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.sh'
+[8.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.bash'
+[8.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.zsh'
+[8.630s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/colcon-core/packages/gb_topological_planner)
+[8.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gb_topological_planner)
+[8.631s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner' for CMake module files
+[8.631s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner' for CMake config files
+[8.631s] Level 1:colcon.colcon_core.shell:create_environment_hook('gb_topological_planner', 'cmake_prefix_path')
+[8.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/cmake_prefix_path.ps1'
+[8.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/cmake_prefix_path.dsv'
+[8.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/cmake_prefix_path.sh'
+[8.632s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib'
+[8.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('gb_topological_planner', 'ld_library_path_lib')
+[8.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/ld_library_path_lib.ps1'
+[8.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/ld_library_path_lib.dsv'
+[8.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/hook/ld_library_path_lib.sh'
+[8.633s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/bin'
+[8.633s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/pkgconfig/gb_topological_planner.pc'
+[8.633s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/python3.10/site-packages'
+[8.633s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/bin'
+[8.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.ps1'
+[8.633s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.dsv'
+[8.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.sh'
+[8.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.bash'
+[8.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.zsh'
+[8.634s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/colcon-core/packages/gb_topological_planner)
+[8.635s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gb_omni_pid_pursuit_controller)
+[8.635s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller' for CMake module files
+[8.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller
+[8.636s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller' for CMake config files
+[8.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('gb_omni_pid_pursuit_controller', 'cmake_prefix_path')
+[8.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/cmake_prefix_path.ps1'
+[8.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/cmake_prefix_path.dsv'
+[8.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/cmake_prefix_path.sh'
+[8.636s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib'
+[8.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('gb_omni_pid_pursuit_controller', 'ld_library_path_lib')
+[8.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/ld_library_path_lib.ps1'
+[8.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/ld_library_path_lib.dsv'
+[8.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/ld_library_path_lib.sh'
+[8.637s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/bin'
+[8.637s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib/pkgconfig/gb_omni_pid_pursuit_controller.pc'
+[8.637s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib/python3.10/site-packages'
+[8.637s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/bin'
+[8.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.ps1'
+[8.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.dsv'
+[8.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.sh'
+[8.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.bash'
+[8.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.zsh'
+[8.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/colcon-core/packages/gb_omni_pid_pursuit_controller)
+[8.639s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gb_omni_pid_pursuit_controller)
+[8.639s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller' for CMake module files
+[8.639s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller' for CMake config files
+[8.639s] Level 1:colcon.colcon_core.shell:create_environment_hook('gb_omni_pid_pursuit_controller', 'cmake_prefix_path')
+[8.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/cmake_prefix_path.ps1'
+[8.639s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/cmake_prefix_path.dsv'
+[8.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/cmake_prefix_path.sh'
+[8.640s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib'
+[8.640s] Level 1:colcon.colcon_core.shell:create_environment_hook('gb_omni_pid_pursuit_controller', 'ld_library_path_lib')
+[8.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/ld_library_path_lib.ps1'
+[8.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/ld_library_path_lib.dsv'
+[8.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/hook/ld_library_path_lib.sh'
+[8.640s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/bin'
+[8.640s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib/pkgconfig/gb_omni_pid_pursuit_controller.pc'
+[8.640s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib/python3.10/site-packages'
+[8.641s] Level 1:colcon.colcon_core.environment:checking '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/bin'
+[8.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.ps1'
+[8.641s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.dsv'
+[8.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.sh'
+[8.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.bash'
+[8.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.zsh'
+[8.642s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/colcon-core/packages/gb_omni_pid_pursuit_controller)
+[8.642s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.642s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.642s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.642s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.646s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.647s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.647s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.661s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.661s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mika/pointlio_lidar/pointlio_lidar/install/local_setup.ps1'
+[8.662s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mika/pointlio_lidar/pointlio_lidar/install/_local_setup_util_ps1.py'
+[8.662s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mika/pointlio_lidar/pointlio_lidar/install/setup.ps1'
+[8.663s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mika/pointlio_lidar/pointlio_lidar/install/local_setup.sh'
+[8.664s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mika/pointlio_lidar/pointlio_lidar/install/_local_setup_util_sh.py'
+[8.664s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mika/pointlio_lidar/pointlio_lidar/install/setup.sh'
+[8.665s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mika/pointlio_lidar/pointlio_lidar/install/local_setup.bash'
+[8.665s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mika/pointlio_lidar/pointlio_lidar/install/setup.bash'
+[8.666s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mika/pointlio_lidar/pointlio_lidar/install/local_setup.zsh'
+[8.666s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mika/pointlio_lidar/pointlio_lidar/install/setup.zsh'

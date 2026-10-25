@@ -1,0 +1,36 @@
+[0.021s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller -- -j20 -l20
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target gb_omni_pid_pursuit_controller[0m
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target gb_omni_pid_pursuit_controller_node[0m
+[0.067s] [ 60%] Built target gb_omni_pid_pursuit_controller
+[0.069s] [100%] Built target gb_omni_pid_pursuit_controller_node
+[0.101s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller -- -j20 -l20
+[0.102s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller
+[0.108s] -- Install configuration: "Release"
+[0.109s] -- Execute custom install script
+[0.109s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib/gb_omni_pid_pursuit_controller/gb_omni_pid_pursuit_controller_node
+[0.116s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/include/gb_omni_pid_pursuit_controller/gb_omni_pid_pursuit_controller/omni_pid_pursuit_controller_node.hpp
+[0.122s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/include/gb_omni_pid_pursuit_controller/gb_omni_pid_pursuit_controller/pid.hpp
+[0.128s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/library_path.sh
+[0.138s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/library_path.dsv
+[0.149s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib/libgb_omni_pid_pursuit_controller.so
+[0.156s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/launch/omni_pid_pursuit_controller_node_launch.py
+[0.165s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/ament_index/resource_index/package_run_dependencies/gb_omni_pid_pursuit_controller
+[0.177s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/ament_index/resource_index/parent_prefix_path/gb_omni_pid_pursuit_controller
+[0.188s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/ament_prefix_path.sh
+[0.200s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/ament_prefix_path.dsv
+[0.206s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/path.sh
+[0.213s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/path.dsv
+[0.219s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/local_setup.bash
+[0.229s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/local_setup.sh
+[0.238s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/local_setup.zsh
+[0.244s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/local_setup.dsv
+[0.251s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.dsv
+[0.257s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/ament_index/resource_index/packages/gb_omni_pid_pursuit_controller
+[0.264s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/ament_index/resource_index/rclcpp_components/gb_omni_pid_pursuit_controller
+[0.271s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.277s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.283s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[0.290s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/gb_omni_pid_pursuit_controllerConfig.cmake
+[0.296s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/gb_omni_pid_pursuit_controllerConfig-version.cmake
+[0.303s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.xml
+[0.312s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller

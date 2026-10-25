@@ -1,0 +1,37 @@
+[0.030s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller -- -j20 -l20
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target gb_omni_pid_pursuit_controller[0m
+[0.091s] [ 40%] Built target gb_omni_pid_pursuit_controller_node
+[0.108s] [ 60%] [32mBuilding CXX object CMakeFiles/gb_omni_pid_pursuit_controller.dir/src/omni_pid_pursuit_controller_node.cpp.o[0m
+[8.993s] [ 80%] [32m[1mLinking CXX shared library libgb_omni_pid_pursuit_controller.so[0m
+[9.111s] [100%] Built target gb_omni_pid_pursuit_controller
+[9.121s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller -- -j20 -l20
+[9.121s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller
+[9.126s] -- Install configuration: "Release"
+[9.127s] -- Execute custom install script
+[9.127s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib/gb_omni_pid_pursuit_controller/gb_omni_pid_pursuit_controller_node
+[9.127s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/include/gb_omni_pid_pursuit_controller/gb_omni_pid_pursuit_controller/omni_pid_pursuit_controller_node.hpp
+[9.127s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/include/gb_omni_pid_pursuit_controller/gb_omni_pid_pursuit_controller/pid.hpp
+[9.127s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/library_path.sh
+[9.127s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/library_path.dsv
+[9.127s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/lib/libgb_omni_pid_pursuit_controller.so
+[9.127s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/launch/omni_pid_pursuit_controller_node_launch.py
+[9.127s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/ament_index/resource_index/package_run_dependencies/gb_omni_pid_pursuit_controller
+[9.127s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/ament_index/resource_index/parent_prefix_path/gb_omni_pid_pursuit_controller
+[9.128s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/ament_prefix_path.sh
+[9.128s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/ament_prefix_path.dsv
+[9.128s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/path.sh
+[9.128s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/environment/path.dsv
+[9.128s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/local_setup.bash
+[9.128s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/local_setup.sh
+[9.128s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/local_setup.zsh
+[9.128s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/local_setup.dsv
+[9.128s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.dsv
+[9.137s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/ament_index/resource_index/packages/gb_omni_pid_pursuit_controller
+[9.137s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/ament_index/resource_index/rclcpp_components/gb_omni_pid_pursuit_controller
+[9.137s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.137s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.137s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[9.137s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/gb_omni_pid_pursuit_controllerConfig.cmake
+[9.137s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/cmake/gb_omni_pid_pursuit_controllerConfig-version.cmake
+[9.137s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_omni_pid_pursuit_controller/share/gb_omni_pid_pursuit_controller/package.xml
+[9.139s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_omni_pid_pursuit_controller

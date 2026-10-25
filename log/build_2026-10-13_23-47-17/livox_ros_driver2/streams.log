@@ -1,0 +1,222 @@
+[0.024s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/livox_ros_driver2 -- -j20 -l20
+[0.051s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.058s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.059s] [  5%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2_node.dir/rclcpp_components/node_main_livox_ros_driver2_node.cpp.o[0m
+[0.072s] [  5%] Built target ament_cmake_python_symlink_livox_ros_driver2
+[0.358s] running egg_info
+[0.359s] creating livox_ros_driver2.egg-info
+[0.359s] writing livox_ros_driver2.egg-info/PKG-INFO
+[0.359s] writing dependency_links to livox_ros_driver2.egg-info/dependency_links.txt
+[0.359s] writing top-level names to livox_ros_driver2.egg-info/top_level.txt
+[0.360s] writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[0.362s] reading manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[0.363s] writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[0.392s] [  5%] Built target ament_cmake_python_build_livox_ros_driver2_egg
+[0.520s] [  8%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_msg__functions.c.o[0m
+[0.520s] [  8%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_point__functions.c.o[0m
+[0.529s] [  8%] Built target livox_interfaces2__cpp
+[0.536s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.537s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.541s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.642s] [ 15%] [32m[1mLinking C shared library liblivox_ros_driver2__rosidl_generator_c.so[0m
+[0.685s] [ 15%] Built target livox_interfaces2__rosidl_generator_c
+[0.697s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.697s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.697s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.888s] [ 24%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_point__type_support.cpp.o[0m
+[0.888s] [ 24%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_msg__type_support.cpp.o[0m
+[0.957s] [ 26%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp.o[0m
+[0.960s] [ 28%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_msg__type_support.cpp.o[0m
+[1.019s] [ 29%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp.o[0m
+[1.019s] [ 31%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_point__type_support.cpp.o[0m
+[1.065s] [ 33%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_msg__type_support.c.o[0m
+[1.065s] [ 35%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_point__type_support.c.o[0m
+[1.133s] [ 36%] [32m[1mLinking C shared library liblivox_ros_driver2__rosidl_typesupport_introspection_c.so[0m
+[1.145s] [ 38%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_msg__type_support.cpp.o[0m
+[1.151s] [ 40%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_point__type_support.cpp.o[0m
+[1.170s] [ 40%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[1.192s] [ 42%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_c.so[0m
+[1.197s] [ 43%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_msg__type_support_c.cpp.o[0m
+[1.197s] [ 45%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_point__type_support_c.cpp.o[0m
+[1.229s] [ 45%] Built target livox_interfaces2__rosidl_typesupport_c
+[1.350s] [ 47%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_cpp.so[0m
+[1.379s] [ 47%] Built target livox_interfaces2__rosidl_typesupport_cpp
+[1.399s] [ 52%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds.cpp.o[0m
+[1.399s] [ 52%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/livox_ros_driver2.cpp.o[0m
+[1.400s] [ 52%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/ldq.cpp.o[0m
+[1.400s] [ 56%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lddc.cpp.o[0m
+[1.400s] [ 57%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/comm.cpp.o[0m
+[1.403s] [ 54%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds_lidar.cpp.o[0m
+[1.404s] [ 59%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/semaphore.cpp.o[0m
+[1.404s] [ 61%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/driver_node.cpp.o[0m
+[1.408s] [ 63%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/pub_handler.cpp.o[0m
+[1.410s] [ 64%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/cache_index.cpp.o[0m
+[1.411s] [ 66%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/lidar_imu_data_queue.cpp.o[0m
+[1.412s] [ 68%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_cfg_file.cpp.o[0m
+[1.440s] [ 70%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/lidar_common_callback.cpp.o[0m
+[1.440s] [ 71%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_livox_lidar_cfg.cpp.o[0m
+[1.474s] [ 73%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.577s] [ 75%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/livox_lidar_callback.cpp.o[0m
+[1.599s] [ 75%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp
+[1.633s] [ 77%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so[0m
+[1.656s] [ 78%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so[0m
+[1.739s] [ 78%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp
+[1.811s] [ 78%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[1.842s] [ 78%] Built target livox_interfaces2
+[1.883s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.894s] [ 80%] Built target livox_interfaces2__py
+[2.922s] [ 82%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_point_s.c.o[0m
+[2.933s] [ 84%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_msg_s.c.o[0m
+[3.219s] [ 85%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so[0m
+[3.267s] [ 85%] Built target livox_interfaces2__rosidl_generator_py
+[3.291s] [ 89%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.291s] [ 89%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.291s] [ 91%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c.o[0m
+[3.465s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.504s] [ 92%] Built target livox_ros_driver2__rosidl_typesupport_c__pyext
+[3.507s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.512s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.541s] [ 96%] Built target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext
+[3.555s] [ 96%] Built target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext
+[4.588s] [ 98%] [32m[1mLinking CXX executable livox_ros_driver2_node[0m
+[4.684s] [ 98%] Built target livox_ros_driver2_node
+[9.469s] [100%] [32m[1mLinking CXX shared library liblivox_ros_driver2.so[0m
+[9.831s] [100%] Built target livox_ros_driver2
+[9.844s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/livox_ros_driver2 -- -j20 -l20
+[9.846s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/livox_ros_driver2
+[9.854s] -- Install configuration: "Release"
+[9.854s] -- Execute custom install script
+[9.854s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/ament_index/resource_index/rosidl_interfaces/livox_ros_driver2
+[9.864s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.h
+[9.873s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.h
+[9.882s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.h
+[9.891s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.h
+[9.899s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.h
+[9.908s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.h
+[9.916s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.h
+[9.925s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.h
+[9.933s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_c__visibility_control.h
+[9.942s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.sh
+[9.951s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.dsv
+[9.961s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h
+[9.971s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h
+[9.980s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.990s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h
+[9.996s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_c.h
+[10.005s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.013s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.hpp
+[10.020s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.hpp
+[10.025s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__builder.hpp
+[10.033s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.hpp
+[10.044s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__traits.hpp
+[10.052s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.hpp
+[10.058s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__builder.hpp
+[10.064s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.hpp
+[10.071s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__traits.hpp
+[10.077s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.hpp
+[10.084s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_cpp__visibility_control.hpp
+[10.092s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[10.097s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_cpp.hpp
+[10.103s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.110s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp
+[10.119s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_cpp.hpp
+[10.125s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.sh
+[10.132s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.dsv
+[10.139s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.1.0-py3.10.egg-info/PKG-INFO
+[10.145s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.1.0-py3.10.egg-info/SOURCES.txt
+[10.152s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.1.0-py3.10.egg-info/dependency_links.txt
+[10.161s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.1.0-py3.10.egg-info/top_level.txt
+[10.169s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py
+[10.178s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c
+[10.184s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.191s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c
+[10.199s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so
+[10.205s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.212s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.220s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.228s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py
+[10.237s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py
+[10.245s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg_s.c
+[10.252s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py
+[10.261s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point_s.c
+[10.267s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.267s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.267s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.267s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.idl
+[10.273s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.idl
+[10.281s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.msg
+[10.287s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.msg
+[10.293s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node
+[10.302s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2.so
+[10.309s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/config/HAP_config.json
+[10.317s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/config/MID360_config.json
+[10.326s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud.rviz
+[10.334s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/config/mixed_HAP_MID360_config.json
+[10.343s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/launch/msg_HAP_launch.py
+[10.349s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/launch/msg_MID360_launch.py
+[10.357s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/launch/rviz_HAP_launch.py
+[10.365s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/launch/rviz_MID360_launch.py
+[10.372s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/launch/rviz_mixed.py
+[10.380s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/ament_index/resource_index/package_run_dependencies/livox_ros_driver2
+[10.389s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/ament_index/resource_index/parent_prefix_path/livox_ros_driver2
+[10.397s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.sh
+[10.406s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.dsv
+[10.412s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.sh
+[10.421s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.dsv
+[10.428s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.bash
+[10.435s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.sh
+[10.442s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.zsh
+[10.448s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.dsv
+[10.455s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv
+[10.463s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/ament_index/resource_index/packages/livox_ros_driver2
+[10.471s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/ament_index/resource_index/rclcpp_components/livox_ros_driver2
+[10.479s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake-extras.cmake
+[10.487s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.493s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.500s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_libraries-extras.cmake
+[10.506s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_targets-extras.cmake
+[10.512s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.521s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.529s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake
+[10.538s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config-version.cmake
+[10.547s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/package.xml
+[10.556s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so
+[10.556s] -- Set runtime path of "/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so" to ""
+[10.556s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so
+[10.556s] -- Set runtime path of "/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so" to ""
+[10.556s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so
+[10.556s] -- Set runtime path of "/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so" to ""
+[10.556s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so
+[10.556s] -- Set runtime path of "/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so" to ""
+[10.556s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so
+[10.557s] -- Set runtime path of "/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.557s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so
+[10.557s] -- Set runtime path of "/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so" to ""
+[10.557s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so
+[10.557s] -- Set runtime path of "/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so" to ""
+[10.582s] Listing '/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2'...
+[10.582s] Compiling '/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py'...
+[10.582s] Listing '/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg'...
+[10.582s] Compiling '/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py'...
+[10.582s] Compiling '/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py'...
+[10.582s] Compiling '/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py'...
+[10.585s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so
+[10.585s] -- Set runtime path of "/home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so" to ""
+[10.585s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport.cmake
+[10.585s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport-release.cmake
+[10.585s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport-release.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport-release.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport-release.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cppExport.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport-release.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport-release.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport.cmake
+[10.586s] -- Installing: /home/mika/pointlio_lidar/pointlio_lidar/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport-release.cmake
+[10.588s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/livox_ros_driver2

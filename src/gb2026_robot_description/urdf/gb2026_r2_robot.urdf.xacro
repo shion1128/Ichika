@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<robot name="gb2026_r2"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="base_length" value="0.625"/>
+    <xacro:property name="base_width" value="0.625"/>
+    <xacro:property name="base_height" value="0.02"/>
+
+    <xacro:property name="ground_clearance" value="0.042"/>
+
+    <xacro:property name="livox_x_offset" value="-0.134"/>
+    <xacro:property name="livox_y_offset" value="-0.2524"/>
+    <xacro:property name="livox_z_offset" value="0.5775"/>
+
+    <link name="base_footprint"/>
+
+    <link name="base_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+            <material name="gray">
+                <color rgba="0.5 0.5 0.5 0.8"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="base_footprint_to_base_link" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 ${ground_clearance + base_height/2.0}" rpy="0 0 0"/>
+    </joint>
+
+    <link name="livox_frame">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.04" length="0.06"/>
+            </geometry>
+            <material name="blue">
+                <color rgba="0.1 0.1 0.8 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="base_link_to_livox" type="fixed">
+        <parent link="base_link"/>
+        <child link="livox_frame"/>
+        <origin xyz="${livox_x_offset} ${livox_y_offset} ${livox_z_offset}" rpy="0 0 0"/>
+    </joint>
+
+    <link name="imu_link">
+        <visual>
+            <geometry>
+                <box size="0.01 0.01 0.01"/>
+            </geometry>
+            <material name="red">
+                <color rgba="0.8 0.1 0.1 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="livox_to_imu" type="fixed">
+        <parent link="livox_frame"/>
+        <child link="imu_link"/>
+        <origin xyz="0.011 0.02329 -0.04412" rpy="0 0 0"/>
+    </joint>
+
+</robot>
+
+

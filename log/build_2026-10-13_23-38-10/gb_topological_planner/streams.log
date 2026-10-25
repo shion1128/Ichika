@@ -1,0 +1,57 @@
+[0.018s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner -Wno-dev --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS=-O3 -pipe -Wno-pragmas -Wno-unknown-pragmas -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner
+[0.023s] Not searching for unused variables given on the command line.
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.115s] -- The CXX compiler identification is GNU 11.4.0
+[0.122s] -- Detecting C compiler ABI info
+[0.180s] -- Detecting C compiler ABI info - done
+[0.191s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.191s] -- Detecting C compile features
+[0.191s] -- Detecting C compile features - done
+[0.194s] -- Detecting CXX compiler ABI info
+[0.255s] -- Detecting CXX compiler ABI info - done
+[0.262s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.262s] -- Detecting CXX compile features
+[0.263s] -- Detecting CXX compile features - done
+[0.265s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.387s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.461s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.508s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.566s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.575s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.586s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.602s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.624s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.684s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.688s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.785s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.817s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.856s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.869s] -- Looking for pthread.h
+[0.924s] -- Looking for pthread.h - found
+[0.924s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.978s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.980s] -- Found Threads: TRUE  
+[1.034s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.055s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.124s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.137s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.138s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.138s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.185s] -- Configuring done
+[1.194s] -- Generating done
+[1.198s] -- Build files have been written to: /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner
+[1.205s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner -Wno-dev --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS=-O3 -pipe -Wno-pragmas -Wno-unknown-pragmas -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner
+[1.206s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner -- -j20 -l20
+[1.252s] [ 25%] [32mBuilding CXX object CMakeFiles/gb_topological_planner_node.dir/rclcpp_components/node_main_gb_topological_planner_node.cpp.o[0m
+[1.255s] [ 50%] [32mBuilding CXX object CMakeFiles/gb_topological_planner.dir/src/topological_planner.cpp.o[0m
+[1.571s] In file included from [01m[K/home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner/src/topological_planner.cpp:13[m[K:
+[1.571s] [01m[K/home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner/include/gb_topological_planner/topological_planner.hpp:11:10:[m[K [01;31m[Kfatal error: [m[Kgb_interfaces/srv/get_topological_path.hpp: No such file or directory
+[1.571s]    11 | #include [01;31m[K"gb_interfaces/srv/get_topological_path.hpp"[m[K
+[1.571s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.571s] compilation terminated.
+[1.573s] gmake[2]: *** [CMakeFiles/gb_topological_planner.dir/build.make:76: CMakeFiles/gb_topological_planner.dir/src/topological_planner.cpp.o] Error 1
+[1.573s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gb_topological_planner.dir/all] Error 2
+[1.573s] gmake[1]: *** Waiting for unfinished jobs....
+[3.805s] [ 75%] [32m[1mLinking CXX executable gb_topological_planner_node[0m
+[3.874s] [ 75%] Built target gb_topological_planner_node
+[3.875s] gmake: *** [Makefile:146: all] Error 2

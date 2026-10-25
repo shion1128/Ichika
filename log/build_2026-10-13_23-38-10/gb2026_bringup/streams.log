@@ -1,0 +1,73 @@
+[0.021s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb2026_bringup -Wno-dev --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS=-O3 -pipe -Wno-pragmas -Wno-unknown-pragmas -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup
+[0.029s] Not searching for unused variables given on the command line.
+[0.075s] -- The C compiler identification is GNU 11.4.0
+[0.123s] -- The CXX compiler identification is GNU 11.4.0
+[0.130s] -- Detecting C compiler ABI info
+[0.185s] -- Detecting C compiler ABI info - done
+[0.192s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.193s] -- Detecting C compile features
+[0.193s] -- Detecting C compile features - done
+[0.196s] -- Detecting CXX compiler ABI info
+[0.252s] -- Detecting CXX compiler ABI info - done
+[0.260s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.260s] -- Detecting CXX compile features
+[0.260s] -- Detecting CXX compile features - done
+[0.263s] -- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.372s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.430s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.569s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.573s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.580s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.589s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.601s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.638s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.641s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.723s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.754s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.803s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.817s] -- Looking for pthread.h
+[0.873s] -- Looking for pthread.h - found
+[0.874s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.925s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.926s] -- Found Threads: TRUE  
+[0.998s] -- Configuring done
+[1.001s] -- Generating done
+[1.003s] -- Build files have been written to: /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup
+[1.011s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mika/pointlio_lidar/pointlio_lidar/src/gb2026_bringup -Wno-dev --no-warn-unused-cli -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_CXX_FLAGS=-O3 -pipe -Wno-pragmas -Wno-unknown-pragmas -DBUILD_TESTING=OFF -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup
+[1.012s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup -- -j20 -l20
+[1.043s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup -- -j20 -l20
+[1.045s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup
+[1.052s] -- Install configuration: "Release"
+[1.052s] -- Execute custom install script
+[1.053s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/launch/bringup_launch.py
+[1.061s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/launch/hardware_bridge_launch.py
+[1.070s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/launch/localization_launch.py
+[1.079s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/launch/navigation_launch.py
+[1.088s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/launch/rc_r2_bringup_launch.py
+[1.094s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/launch/robot_state_publisher_launch.py
+[1.101s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/launch/rviz_launch.py
+[1.108s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/launch/slam_launch.py
+[1.116s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/config/mid360_user_config.json
+[1.125s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/config/params.yaml
+[1.131s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/rviz/visualise_world.rviz
+[1.137s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/pcd/fast_lio_scans.pcd
+[1.142s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/pcd/point_lio_scans.pcd
+[1.148s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/rviz/visualise_world.rviz
+[1.148s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/behavior_tree/r2_tree.xml
+[1.156s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/ament_index/resource_index/package_run_dependencies/gb2026_bringup
+[1.163s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/ament_index/resource_index/parent_prefix_path/gb2026_bringup
+[1.168s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/environment/ament_prefix_path.sh
+[1.176s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/environment/ament_prefix_path.dsv
+[1.185s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/environment/path.sh
+[1.194s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/environment/path.dsv
+[1.203s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/local_setup.bash
+[1.212s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/local_setup.sh
+[1.219s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/local_setup.zsh
+[1.227s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/local_setup.dsv
+[1.235s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/package.dsv
+[1.240s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/ament_index/resource_index/packages/gb2026_bringup
+[1.247s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.255s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/cmake/gb2026_bringupConfig.cmake
+[1.263s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/cmake/gb2026_bringupConfig-version.cmake
+[1.268s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb2026_bringup/share/gb2026_bringup/package.xml
+[1.276s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb2026_bringup

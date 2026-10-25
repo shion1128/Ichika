@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mika/pointlio_lidar/pointlio_lidar/build/serial_hardware_bridge/serial_hardware_bridge_node" "TARGETS" "serial_hardware_bridge_node" "DESTINATION" "lib/serial_hardware_bridge")

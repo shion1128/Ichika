@@ -1,0 +1,25 @@
+[ 50%] Built target gb_topological_planner_node
+[ 75%] [32m[1mLinking CXX shared library libgb_topological_planner.so[0m
+[100%] Built target gb_topological_planner
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/gb_topological_planner/gb_topological_planner_node
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/config/topology_map.yaml
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/libgb_topological_planner.so
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/gb_topological_planner/gb_topological_planner_node
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/package_run_dependencies/gb_topological_planner
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/parent_prefix_path/gb_topological_planner
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/path.sh
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/path.dsv
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.bash
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.sh
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.zsh
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.dsv
+-- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.dsv
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/packages/gb_topological_planner
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/rclcpp_components/gb_topological_planner
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/cmake/gb_topological_plannerConfig.cmake
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/cmake/gb_topological_plannerConfig-version.cmake
+-- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.xml

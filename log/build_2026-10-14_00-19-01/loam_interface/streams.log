@@ -1,0 +1,33 @@
+[0.027s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/loam_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/loam_interface -- -j20 -l20
+[0.091s] [ 50%] Built target loam_interface_node
+[0.104s] [100%] Built target loam_interface
+[0.151s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/loam_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/loam_interface -- -j20 -l20
+[0.153s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/loam_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/loam_interface
+[0.168s] -- Install configuration: "Release"
+[0.168s] -- Execute custom install script
+[0.169s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/lib/loam_interface/loam_interface_node
+[0.169s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/include/loam_interface/loam_interface/loam_interface.hpp
+[0.169s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/environment/library_path.sh
+[0.169s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/environment/library_path.dsv
+[0.169s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/lib/libloam_interface.so
+[0.169s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/launch/loam_interface_launch.py
+[0.169s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/ament_index/resource_index/package_run_dependencies/loam_interface
+[0.169s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/ament_index/resource_index/parent_prefix_path/loam_interface
+[0.170s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/environment/ament_prefix_path.sh
+[0.170s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/environment/ament_prefix_path.dsv
+[0.170s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/environment/path.sh
+[0.170s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/environment/path.dsv
+[0.170s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/local_setup.bash
+[0.170s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/local_setup.sh
+[0.170s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/local_setup.zsh
+[0.170s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/local_setup.dsv
+[0.170s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/package.dsv
+[0.181s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/ament_index/resource_index/packages/loam_interface
+[0.181s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/ament_index/resource_index/rclcpp_components/loam_interface
+[0.181s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.182s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.182s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[0.182s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/cmake/loam_interfaceConfig.cmake
+[0.182s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/cmake/loam_interfaceConfig-version.cmake
+[0.182s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/loam_interface/share/loam_interface/package.xml
+[0.210s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/loam_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/loam_interface

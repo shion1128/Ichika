@@ -1,0 +1,9 @@
+In file included from [01m[K/home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner/src/topological_planner.cpp:13[m[K:
+[01m[K/home/mika/pointlio_lidar/pointlio_lidar/src/gb_topological_planner/include/gb_topological_planner/topological_planner.hpp:11:10:[m[K [01;31m[Kfatal error: [m[Kgb_interfaces/srv/get_topological_path.hpp: No such file or directory
+   11 | #include [01;31m[K"gb_interfaces/srv/get_topological_path.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/gb_topological_planner.dir/build.make:76: CMakeFiles/gb_topological_planner.dir/src/topological_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gb_topological_planner.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

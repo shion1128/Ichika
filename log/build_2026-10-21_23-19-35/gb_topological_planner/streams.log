@@ -1,0 +1,28 @@
+[0.026s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner -- -j20 -l20
+[0.093s] [ 50%] Built target gb_topological_planner_node
+[0.096s] [100%] Built target gb_topological_planner
+[0.140s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner -- -j20 -l20
+[0.141s] Invoking command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner
+[0.150s] -- Install configuration: "Release"
+[0.151s] -- Execute custom install script
+[0.154s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/gb_topological_planner/gb_topological_planner_node
+[0.154s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/config/topology_map.yaml
+[0.155s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/libgb_topological_planner.so
+[0.155s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/lib/gb_topological_planner/gb_topological_planner_node
+[0.155s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/package_run_dependencies/gb_topological_planner
+[0.156s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/parent_prefix_path/gb_topological_planner
+[0.156s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/ament_prefix_path.sh
+[0.157s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/ament_prefix_path.dsv
+[0.157s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/path.sh
+[0.157s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/environment/path.dsv
+[0.157s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.bash
+[0.157s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.sh
+[0.158s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.zsh
+[0.158s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/local_setup.dsv
+[0.158s] -- Symlinking: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.dsv
+[0.162s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/packages/gb_topological_planner
+[0.163s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/ament_index/resource_index/rclcpp_components/gb_topological_planner
+[0.163s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/cmake/gb_topological_plannerConfig.cmake
+[0.163s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/cmake/gb_topological_plannerConfig-version.cmake
+[0.165s] -- Up-to-date symlink: /home/mika/pointlio_lidar/pointlio_lidar/install/gb_topological_planner/share/gb_topological_planner/package.xml
+[0.196s] Invoked command in '/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner
