@@ -1,4 +1,0 @@
-source;share/gb_omni_pid_pursuit_controller/local_setup.bash
-source;share/gb_omni_pid_pursuit_controller/local_setup.dsv
-source;share/gb_omni_pid_pursuit_controller/local_setup.sh
-source;share/gb_omni_pid_pursuit_controller/local_setup.zsh

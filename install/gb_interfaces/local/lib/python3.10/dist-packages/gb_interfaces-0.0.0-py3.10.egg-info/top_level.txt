@@ -1,1 +1,0 @@
-/home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces/ament_cmake_python/gb_interfaces/gb_interfaces.egg-info/top_level.txt

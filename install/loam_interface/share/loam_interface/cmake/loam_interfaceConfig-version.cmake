@@ -1,1 +1,0 @@
-/home/mika/pointlio_lidar/pointlio_lidar/build/loam_interface/ament_cmake_core/loam_interfaceConfig-version.cmake

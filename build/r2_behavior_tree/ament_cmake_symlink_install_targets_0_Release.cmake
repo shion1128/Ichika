@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mika/pointlio_lidar/pointlio_lidar/build/r2_behavior_tree/r2_behavior_tree_node" "TARGETS" "r2_behavior_tree_node" "DESTINATION" "lib/r2_behavior_tree")

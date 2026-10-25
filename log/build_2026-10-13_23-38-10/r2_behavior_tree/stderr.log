@@ -1,8 +1,0 @@
-In file included from [01m[K/home/mika/pointlio_lidar/pointlio_lidar/src/r2_behavior_tree/src/r2_behavior_tree_node.cpp:8[m[K:
-[01m[K/home/mika/pointlio_lidar/pointlio_lidar/src/r2_behavior_tree/include/r2_behavior_tree/get_topological_path_node.hpp:16:10:[m[K [01;31m[Kfatal error: [m[Kgb_interfaces/srv/get_topological_path.hpp: No such file or directory
-   16 | #include [01;31m[K"gb_interfaces/srv/get_topological_path.hpp"[m[K // 包含你自定义的服务类型
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/r2_behavior_tree_node.dir/build.make:76: CMakeFiles/r2_behavior_tree_node.dir/src/r2_behavior_tree_node.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/r2_behavior_tree_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

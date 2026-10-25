@@ -1,1 +1,0 @@
-/home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces/ament_cmake_core/gb_interfacesConfig-version.cmake

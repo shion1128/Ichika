@@ -1,1 +1,0 @@
-/home/mika/pointlio_lidar/pointlio_lidar/build/gb_interfaces/rosidl_cmake/srv/GetTopologicalPath_Response.msg

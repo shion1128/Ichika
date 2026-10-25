@@ -1,1 +1,0 @@
-/home/mika/pointlio_lidar/pointlio_lidar/src/gb2026_bringup/launch/robot_state_publisher_launch.py

@@ -1,3 +1,0 @@
-source;share/serial_hardware_bridge/environment/ament_prefix_path.sh
-source;share/serial_hardware_bridge/environment/library_path.sh
-source;share/serial_hardware_bridge/environment/path.sh

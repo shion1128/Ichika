@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mika/pointlio_lidar/pointlio_lidar/build/gb_topological_planner/gb_topological_planner_node" "TARGETS" "gb_topological_planner_node" "DESTINATION" "lib/gb_topological_planner")

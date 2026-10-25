@@ -1,1 +1,0 @@
-/home/mika/pointlio_lidar/pointlio_lidar/build/point_lio/ament_cmake_environment_hooks/local_setup.sh

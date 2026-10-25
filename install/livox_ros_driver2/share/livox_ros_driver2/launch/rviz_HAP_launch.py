@@ -1,1 +1,0 @@
-/home/mika/pointlio_lidar/pointlio_lidar/src/livox_ros_driver2/launch/rviz_HAP_launch.py

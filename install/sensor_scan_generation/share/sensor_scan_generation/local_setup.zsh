@@ -1,1 +1,0 @@
-/home/mika/pointlio_lidar/pointlio_lidar/build/sensor_scan_generation/ament_cmake_environment_hooks/local_setup.zsh

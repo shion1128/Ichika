@@ -1,1 +1,0 @@
-/home/mika/pointlio_lidar/pointlio_lidar/src/livox_ros_driver2/msg/CustomPoint.msg
