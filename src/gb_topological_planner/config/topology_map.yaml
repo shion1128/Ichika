@@ -19,6 +19,7 @@ topological_map:
     - [spot_2, spot_3]
     - [spot_3, spot_4]
     - [spot_4, spot_5]
+    - [start_zone, spot_4]
 
 
 

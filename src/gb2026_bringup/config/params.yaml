@@ -49,13 +49,13 @@ small_gicp_relocalization:
 
 gb_omni_pid_pursuit_controller:
   ros__parameters:
-    move_kp: 1.75                             # 机器人线速度控制的比例增益 (Proportional Gain) 1.1
+    move_kp: 1.5                             # 机器人线速度控制的比例增益 (Proportional Gain) 1.1
     move_ki: 0.0                              # 机器人线速度控制的积分增益 (Integral Gain)。通常用于消除稳态误差。
-    move_kd: 1.1                              # 机器人线速度控制的微分增益 (Derivative Gain)。用于抑制震荡、提高响应速度
-    lookahead_dist: 0.4                        # 纯追踪前视距离(米)。越大越早转向，越小越贴路径。建议 1.0~2.0
-    heading_kp: 2.85                          # 机器人航向角（旋转）控制的比例增益
+    move_kd: 1.2                              # 机器人线速度控制的微分增益 (Derivative Gain)。用于抑制震荡、提高响应速度
+    lookahead_dist: 0.6                        # 纯追踪前视距离(米)。越大越早转向，越小越贴路径。建议 1.0~2.0
+    heading_kp: 2.55                          # 机器人航向角（旋转）控制的比例增益
     heading_ki: 0.0                           # 机器人航向角控制的积分增益
-    heading_kd: 0.65                           # 机器人航向角控制的微分增益
+    heading_kd: 0.75                           # 机器人航向角控制的微分增益
     approach_dist: 0.25                        # 接近目标点时的距离阈值 (米)。当机器人距离目标小于此值时，会开始减速。
     min_approach_vel: 0.1                    # 接近目标点时允许的最小线速度 (米/秒)。防止在目标点附近完全停车造成停顿。
     max_linear_vel_: 1.2                      # 最大线速度 (m/s)
@@ -63,7 +63,7 @@ gb_omni_pid_pursuit_controller:
     max_accel_: 0.75                           # ★ 加速度上限 (m/s²)，防止速度突变
     xy_goal_tolerance: 0.012                  # ★ 平地位置容差(米)
     yaw_goal_tolerance: 0.02                 # ★ 平地航向容差(rad), ~0.57°
-    settle_ticks: 4                          # ★ 平地稳定拍数, 7拍=140ms
+    settle_ticks: 5                          # ★ 平地稳定拍数, 7拍=140ms
 
 point_lio:
   ros__parameters:
@@ -110,9 +110,9 @@ point_lio:
       acc_cov_output: 515.0                           # 加速度输出协方差 
       gyr_cov_output: 1005.0                          # 角速度输出协方差
       b_acc_cov: 5.368e-5                              # 加速度零偏协方差
-      b_gyr_cov: 1.915e-8                               # 角速度零偏协方差
+      b_gyr_cov: 1.915e-6                               # 角速度零偏协方差
       imu_meas_acc_cov: 3.1255e-2                          # IMU加速度测量协方差
-      imu_meas_omg_cov: 6.7154e-6                          # IMU角速度测量协方差
+      imu_meas_omg_cov: 6.7154e-4                          # IMU角速度测量协方差
       gyr_cov_input: 0.01                             # IMU作为输入时的角速度协方差
       acc_cov_input: 0.1                              # IMU作为输入时的加速度协方差
       plane_thr: 0.1                                  # 平面阈值 (the smaller, the flatter a plane)
@@ -135,7 +135,7 @@ point_lio:
       tf_send_en: False                               # 是否发布TF (True: send transform from 'camera_init' to 'aft_mapped')
 
     pcd_save:
-      pcd_save_en: False                               # 是否保存PCD文件
+      pcd_save_en: True                               # 是否保存PCD文件
       interval: -1                                    # PCD保存间隔 (-1 : all frames will be saved in ONE pcd file)
       dir: "src/gb2026_bringup/pcd"    # <--- 你现在可以把地图指派到任何你想去的地方了！
 
