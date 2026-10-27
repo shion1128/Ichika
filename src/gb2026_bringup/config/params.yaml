@@ -88,9 +88,10 @@ point_lio:
       time_diff_lidar_to_imu: 0.0                     # 雷达到IMU的时间偏移 (Time offset between LiDAR and IMU calibrated by other algorithms)
 
     prior_pcd:
-      enable: False                                   # 是否启用先验地图
-      prior_pcd_map_path: "src/point_lio/PCD/scans.pcd" # 先验地图路径
-      init_pose: [ 0.0, 0.0, 0.0 ]                    # 初始位姿
+      enable: True                                    # 是否启用先验地图 (跑 slam_launch.py 建图前必须改回 False)
+      prior_pcd_map_path: "src/point_lio/PCD/scans.pcd" # 先验地图路径 (定位模式会被 launch 的 prior_pcd_file 覆盖)
+      init_pose: [ 0.0, 0.0, 0.0 ]                    # 初始位置 x y z，先验地图坐标系下
+      init_yaw: 0.0                                   # 初始朝向 yaw (rad)，先验地图坐标系下，绕世界 Z 轴
 
     preprocess:
       lidar_type: 1                                   # 雷达类型 (1: Livox, 2: Velodyne, 3: Ouster)

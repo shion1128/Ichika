@@ -255,9 +255,6 @@ void publish_frame_body(
 template <typename T>
 void set_posestamp(T &out)
 {
-  // Static variable, initialized to true, only effective on the first call
-  static bool is_first_kf = true;
-
   auto set_output_from_kf = [&](const auto &kf)
   {
     out.position.x = kf.x_.pos(0);
@@ -272,19 +269,7 @@ void set_posestamp(T &out)
 
   if (!use_imu_as_input)
   {
-    if (enable_prior_pcd && is_first_kf)
-    {
-      // Execute only on the first call
-      kf_output.x_.pos(0) = init_pose[0];
-      kf_output.x_.pos(1) = init_pose[1];
-      kf_output.x_.pos(2) = init_pose[2];
-      set_output_from_kf(kf_output);
-      is_first_kf = false; // Set is_first_kf to false after the first call
-    }
-    else
-    {
-      set_output_from_kf(kf_output);
-    }
+    set_output_from_kf(kf_output);
   }
   else
   {
@@ -560,11 +545,45 @@ int main(int argc, char **argv)
           // V3D tmp_gravity << VEC_FROM_ARRAY(gravity_init);
           M3D rot_init;
           p_imu->Set_init(tmp_gravity, rot_init);
+
+          // ---- prior map initial pose injection (x, y, z, yaw) ----
+          // Set_init only resolves roll/pitch from gravity; yaw is unobservable from IMU at
+          // standstill, so it is supplied by prior_pcd.init_yaw and applied by left-multiplying
+          // a rotation about the WORLD Z axis (left multiply = operate in the parent/world frame).
+          if (enable_prior_pcd)
+          {
+            rot_init = Exp(0.0, 0.0, init_yaw) * rot_init;
+          }
+
           kf_input.x_.rot = rot_init;
           kf_output.x_.rot = rot_init;
           // kf_input.x_.rot; //.normalize();
           // kf_output.x_.rot; //.normalize();
           kf_output.x_.acc = -rot_init.transpose() * kf_output.x_.gravity;
+
+          if (enable_prior_pcd)
+          {
+            if (init_pose.size() >= 3)
+            {
+              kf_output.x_.pos(0) = init_pose[0];
+              kf_output.x_.pos(1) = init_pose[1];
+              kf_output.x_.pos(2) = init_pose[2];
+              kf_input.x_.pos(0) = init_pose[0];
+              kf_input.x_.pos(1) = init_pose[1];
+              kf_input.x_.pos(2) = init_pose[2];
+              RCLCPP_INFO(
+                  LOGGER, "Prior map init pose injected: pos = [%.3f, %.3f, %.3f], yaw = %.4f rad",
+                  init_pose[0], init_pose[1], init_pose[2], init_yaw);
+            }
+            else
+            {
+              RCLCPP_ERROR(
+                  LOGGER,
+                  "prior_pcd.enable is true but prior_pcd.init_pose has %zu element(s) (need >= 3), "
+                  "position NOT injected (yaw %.4f rad was applied).",
+                  init_pose.size(), init_yaw);
+            }
+          }
         }
         else
         {
@@ -591,6 +610,14 @@ int main(int argc, char **argv)
           if (enable_prior_pcd)
           {
             auto map_cloud = loadPointcloudFromPcd(prior_pcd_map_path);
+            if (map_cloud == nullptr)
+            {
+              RCLCPP_ERROR(
+                  LOGGER, "Failed to load prior map from '%s', shutting down.",
+                  prior_pcd_map_path.c_str());
+              rclcpp::shutdown();
+              return 1;
+            }
             ivox_->AddPoints(map_cloud->points);
           }
           else

@@ -40,6 +40,7 @@ double time_diff_lidar_to_imu = 0.0;
 bool enable_prior_pcd;
 string prior_pcd_map_path;
 std::vector<double> init_pose;
+double init_yaw = 0.0;
 
 double lidar_time_inte = 0.1, first_imu_time = 0.0;
 int cut_frame_num = 1, orig_odom_freq = 10;
@@ -114,6 +115,18 @@ void readParameters(std::shared_ptr<rclcpp::Node> & nh)
 
     nh->declare_parameter<std::vector<double>>("prior_pcd.init_pose", std::vector<double>());
     nh->get_parameter("prior_pcd.init_pose", init_pose);
+
+    nh->declare_parameter<double>("prior_pcd.init_yaw", 0.0);
+    nh->get_parameter("prior_pcd.init_yaw", init_yaw);
+
+    // Guard against operator[] out-of-range on init_pose when the prior map is enabled.
+    if (enable_prior_pcd && init_pose.size() < 3) {
+      RCLCPP_ERROR(
+        nh->get_logger(),
+        "prior_pcd.enable is true but prior_pcd.init_pose only has %zu element(s) (need >= 3). "
+        "Initial position will NOT be injected; please check params.yaml.",
+        init_pose.size());
+    }
 
     nh->declare_parameter<double>("filter_size_surf", 0.5);
     nh->get_parameter("filter_size_surf", filter_size_surf_min);

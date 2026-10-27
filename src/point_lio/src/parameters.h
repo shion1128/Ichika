@@ -79,6 +79,7 @@ extern double time_update_last, time_current, time_predict_last_const, t_last;
 extern bool enable_prior_pcd;
 extern string prior_pcd_map_path;
 extern std::vector<double> init_pose;
+extern double init_yaw;
 
 extern MeasureGroup Measures;
 
