@@ -90,8 +90,8 @@ point_lio:
     prior_pcd:
       enable: True                                    # 是否启用先验地图 (跑 slam_launch.py 建图前必须改回 False)
       prior_pcd_map_path: "src/point_lio/PCD/scans.pcd" # 先验地图路径 (定位模式会被 launch 的 prior_pcd_file 覆盖)
-      init_pose: [ 0.0, 0.0, 0.0 ]                    # 初始位置 x y z，先验地图坐标系下
-      init_yaw: 0.0                                   # 初始朝向 yaw (rad)，先验地图坐标系下，绕世界 Z 轴
+      init_pose: [ 1.7211, 0.8267, 0.0090 ]                    # 初始位置 x y z，先验地图坐标系下
+      init_yaw: 0.7251                                   # 初始朝向 yaw (rad)，先验地图坐标系下，绕世界 Z 轴
 
     preprocess:
       lidar_type: 1                                   # 雷达类型 (1: Livox, 2: Velodyne, 3: Ouster)
@@ -136,7 +136,7 @@ point_lio:
       tf_send_en: False                               # 是否发布TF (True: send transform from 'camera_init' to 'aft_mapped')
 
     pcd_save:
-      pcd_save_en: True                               # 是否保存PCD文件
+      pcd_save_en: False                               # 是否保存PCD文件
       interval: -1                                    # PCD保存间隔 (-1 : all frames will be saved in ONE pcd file)
       dir: "src/gb2026_bringup/pcd"    # <--- 你现在可以把地图指派到任何你想去的地方了！
 
