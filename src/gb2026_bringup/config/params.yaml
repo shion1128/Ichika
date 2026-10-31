@@ -71,9 +71,9 @@ point_lio:
     prop_at_freq_of_imu: True                           # 是否按IMU频率进行传播
     check_satu: True                                    # 是否检查IMU饱和
     init_map_size: 10                                   # 初始地图大小
-    point_filter_num: 8                                 # 点云采样间隔 (Options: 4, 3)
+    point_filter_num: 4                                 # 点云采样间隔 (Options: 4, 3)
     space_down_sample: True                             # 是否开启空间降采样
-    filter_size_surf: 0.5                               # 平面点降采样尺寸 (Options: 0.5, 0.3, 0.2, 0.15, 0.1)
+    filter_size_surf: 0.3                               # 平面点降采样尺寸 (Options: 0.5, 0.3, 0.2, 0.15, 0.1)
     filter_size_map: 0.3                                # 地图降采样尺寸 (Options: 0.5, 0.3, 0.15, 0.1)
     ivox_nearby_type: 18                                 # ivox附近搜索类型 (Options: 0, 6, 18, 26)
     runtime_pos_log_enable: False                       # 是否启用运行时位置日志 (Option: True)
