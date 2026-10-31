@@ -207,6 +207,9 @@ namespace gb_omni_pid_pursuit_controller
         double final_y = 0.0;
         double final_yaw = 0.0;
         size_t current_carrot_idx = 0;
+        // 方向锁状态：仅在航向误差接近 ±π（atan2 的不连续点）时生效
+        bool rot_locked = false;
+        int rot_dir = 1; // +1 逆时针，-1 顺时针
 
         // 主控制循环
         while (rclcpp::ok() && is_running_)
@@ -249,6 +252,7 @@ namespace gb_omni_pid_pursuit_controller
                 heading_pid_->reset();
                 settle_counter_ = 0;
                 last_lin_vel_ = 0.0;
+                rot_locked = false;           // 新任务重新裁决转向方向
                 last_handle = current_handle; // 更新“上一个句柄”的记录
             }
 
@@ -336,6 +340,36 @@ namespace gb_omni_pid_pursuit_controller
             double yaw_error = carrot_yaw - current_yaw;
             // 将角度误差归一化到 [-PI, PI] 区间
             yaw_error = std::atan2(std::sin(yaw_error), std::cos(yaw_error));
+
+            // ---- 方向锁：只在 ±π 不连续点附近生效 ----
+            // atan2(sin,cos) 在 ±π 处跳变：+π 与 -π 是同一个物理角度却符号相反。
+            // 当所需旋转接近 180° 时左右两个方向等长，误差符号会被噪声反复翻转，
+            // 导致角速度指令左右摆动。这里在危险带内只裁决一次方向，并沿该方向"展开"误差，
+            // 使 PID 输入符号恒定。
+            // 带宽 kBend = 15°，最坏比最短方向多转 2*kBend = 30°；
+            // 误差落到 π/2 以内即解锁，因此不影响正常路径跟踪。
+            constexpr double kBend = 15.0 * M_PI / 180.0;
+            if (std::fabs(yaw_error) > M_PI - kBend)
+            {
+                if (!rot_locked)
+                {
+                    rot_dir = (yaw_error >= 0.0) ? 1 : -1; // 平局时默认逆时针
+                    rot_locked = true;
+                }
+                // 沿锁定方向展开误差，抵消 ±π 处的符号跳变
+                if (rot_dir > 0 && yaw_error < 0.0)
+                {
+                    yaw_error += 2.0 * M_PI;
+                }
+                else if (rot_dir < 0 && yaw_error > 0.0)
+                {
+                    yaw_error -= 2.0 * M_PI;
+                }
+            }
+            else if (std::fabs(yaw_error) < M_PI / 2.0)
+            {
+                rot_locked = false; // 已远离不连续点，恢复正常的短边选择
+            }
 
             // B. 用于判断最终是否到达的误差 (只看路径的绝对终点，不看"胡萝卜点")
             double dist_to_final = std::hypot(final_x - pv_x, final_y - pv_y);
