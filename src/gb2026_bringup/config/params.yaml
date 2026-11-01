@@ -88,7 +88,7 @@ point_lio:
       time_diff_lidar_to_imu: 0.0                     # 雷达到IMU的时间偏移 (Time offset between LiDAR and IMU calibrated by other algorithms)
 
     prior_pcd:
-      enable: True                                    # 是否启用先验地图 (跑 slam_launch.py 建图前必须改回 False)
+      enable: false                                    # 是否启用先验地图 (跑 slam_launch.py 建图前必须改回 False)
       prior_pcd_map_path: "src/point_lio/PCD/scans.pcd" # 先验地图路径 (定位模式会被 launch 的 prior_pcd_file 覆盖)
       init_pose: [ 0.0, 0.0, 0.0 ]                    # 初始位置 x y z，先验地图坐标系下
       init_yaw: 0.0                                   # 初始朝向 yaw (rad)，先验地图坐标系下，绕世界 Z 轴
@@ -139,64 +139,6 @@ point_lio:
       pcd_save_en: False                               # 是否保存PCD文件
       interval: -1                                    # PCD保存间隔 (-1 : all frames will be saved in ONE pcd file)
       dir: "src/gb2026_bringup/pcd"    # <--- 你现在可以把地图指派到任何你想去的地方了！
-
-
-
-fast_lio:
-  ros__parameters:
-    # ===================== 基础与全局参数 =====================
-    feature_extract_enable: false         # 是否开启特征提取。FAST-LIO 是直接匹配原始点云的，不提取线/面特征，因此通常设为 false
-    point_filter_num: 3                   # 点云空间降采样间隔（每隔几个点取一个）。数值越大降采样越多，处理越快但精度可能下降
-    max_iteration: 7                      # 迭代误差状态卡尔曼滤波 (IESKF) 的最大迭代次数
-    filter_size_surf: 0.2                 # 当前帧点云（面点）的体素滤波网格大小 (米)。0.2表示20cm的网格
-    filter_size_map: 0.2                  # 局部/全局地图的体素滤波网格大小 (米)
-    cube_side_length: 300.0              # ikd-Tree (增量式kd树) 维护的局部地图空间立方体边长大小 (米)
-    runtime_pos_log_enable: false         # 是否在运行时输出位姿日志文件 (通常用于调试和精度评估)
-    map_file_path: "src/gb2026_bringup/pcd/fast_lio_scans.pcd" # 最终保存 PCD 地图的绝对路径
-
-    common:
-      # ===================== 话题与时间同步 =====================
-      lid_topic:  "/livox/lidar"        # 订阅的雷达点云话题名称 (Livox 自定义消息格式)
-      imu_topic:  "/livox/imu"          # 订阅的 IMU 数据话题名称
-      time_sync_en: false               # 是否开启软时间同步。仅在硬件时间未同步时开启（MID360内置IMU，硬件已经严格同步，所以填 false）
-      time_offset_lidar_to_imu: 0.0     # 雷达到IMU的时间偏移量。若硬件未同步可通过其他标定算法算出来填这里。这里严格同步填 0.0 即可
-
-    preprocess:
-      # ===================== 预处理参数 =====================
-      lidar_type: 1                     # 雷达类型: 1代表Livox, 2代表Velodyne, 3代表Ouster, 4代表通用点云
-      scan_line:  4                     # 雷达扫描线数 (Livox MID360 习惯上配置为4或6即可)
-      blind: 0.78                        # 盲区距离 (米)。距离雷达小于此值 (50cm) 的噪点或车体自身的点将被直接过滤掉
-      timestamp_unit: 3                 # 点云时间戳的单位: 0-秒(s), 1-毫秒(ms), 2-微秒(us), 3-纳秒(ns)
-      scan_rate: 10                     # 雷达的工作频率 (Hz)。MID360 默认通常为 10Hz
-
-    mapping:
-        # ===================== 建图与优化参数 =====================
-        acc_cov: 0.1                      # IMU 加速度计的测量噪声协方差
-        gyr_cov: 0.1                      # IMU 陀螺仪的测量噪声协方差
-        b_acc_cov: 0.0001                 # IMU 加速度计零偏(Bias)的随机游走噪声协方差
-        b_gyr_cov: 0.0001                 # IMU 陀螺仪零偏(Bias)的随机游走噪声协方差
-        fov_degree:    360.0              # 雷达的水平视场角。MID360 是全景雷达，故为 360度
-        det_range:     100.0              # 雷达的最大有效探测距离 (米)。超过此距离的点通常不可靠，会被剔除
-        extrinsic_est_en:  true           # 是否开启外参(Extrinsic)的在线优化估计。如果初始外参不准，开启后算法运行一段时间会自动微调
-        extrinsic_T: [ -0.011, -0.02329, 0.04412 ] # 雷达到 IMU 的平移外参 [tx, ty, tz] (极其重要，单位：米)
-        extrinsic_R: [ 1., 0., 0.,        # 雷达到 IMU 的旋转外参矩阵 (3x3旋转矩阵的展开) (极其重要)
-                        0., 1., 0.,
-                        0., 0., 1.]
-
-    publish:
-      # ===================== 发布选项 =====================
-      path_en: true                     # 是否发布机器人的历史轨迹 (nav_msgs/Path)
-      effect_map_en: false              # 是否发布有效特征点地图 (仅供调试用)
-      map_en: true                      # 是否发布全局增量点云地图 (用于在 Rviz 中观看建图效果)
-      scan_publish_en:  true            # 是否发布当前处理完的单帧点云
-      dense_publish_en: false           # 是否稠密发布。设为 false 会发布降采样后的点云，节省通信带宽
-      scan_bodyframe_pub_en: true       # 是否发布转换到机器人本体坐标系 (IMU Body 坐标系) 下的当前帧点云
-      tf_send_en: false                 # 是否由 FAST-LIO 自己发送 TF 树 (Odom -> Body)。因为通常会有单独的状态估计算法或 robot_localization 来发，为防冲突这里设为 false
-
-    pcd_save:
-      # ===================== PCD 文件保存 =====================
-      pcd_save_en: true                 # 是否在节点退出时保存 PCD 点云地图文件
-      interval: -1                      # 每隔多少个雷达帧保存一次文件。-1 表示最后合并成一个大文件保存 (若建图范围特别大，可能会爆内存)
 
 # ===================== 拓扑规划器 =====================
 topological_planner:

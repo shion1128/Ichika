@@ -135,15 +135,15 @@ def generate_launch_description():
                 parameters=[configured_params, {'map_path': _topo_map_path}],
                 arguments=["--ros-args", "--log-level", log_level],
             ),
-            Node(
-                package="tf2_ros",
-                executable="static_transform_publisher",
-                name="map_to_odom_tf",
-                output="screen",
-                arguments=["--x", "0", "--y", "0", "--z", "0",
-                           "--roll", "0", "--pitch", "0", "--yaw", "0",
-                           "--frame-id", "map", "--child-frame-id", "odom"],
-            )
+            # Node(
+            #     package="tf2_ros",
+            #     executable="static_transform_publisher",
+            #     name="map_to_odom_tf",
+            #     output="screen",
+            #     arguments=["--x", "0", "--y", "0", "--z", "0",
+            #                "--roll", "0", "--pitch", "0", "--yaw", "0",
+            #                "--frame-id", "map", "--child-frame-id", "odom"],
+            # )
         ]
     )
 

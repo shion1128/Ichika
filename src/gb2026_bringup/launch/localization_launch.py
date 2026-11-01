@@ -82,16 +82,16 @@ def generate_launch_description():
 
     load_nodes = GroupAction(
         actions=[
-            # Node(
-            #     package="small_gicp_relocalization",
-            #     executable="small_gicp_relocalization_node",
-            #     name="small_gicp_relocalization",
-            #     output="screen",
-            #     respawn=use_respawn,
-            #     respawn_delay=2.0,
-            #     parameters=[configured_params, {"prior_pcd_file": prior_pcd_file}],
-            #     arguments=["--ros-args", "--log-level", log_level],
-            # ),
+            Node(
+                package="small_gicp_relocalization",
+                executable="small_gicp_relocalization_node",
+                name="small_gicp_relocalization",
+                output="screen",
+                respawn=use_respawn,
+                respawn_delay=2.0,
+                parameters=[configured_params, {"prior_pcd_file": prior_pcd_file}],
+                arguments=["--ros-args", "--log-level", log_level],
+            ),
             # Node(
             #     package="fast_lio",
             #     executable="fastlio_mapping",
