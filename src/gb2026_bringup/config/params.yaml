@@ -28,33 +28,14 @@ sensor_scan_generation:
     base_frame: "base_footprint"
     robot_base_frame: "base_link"
 
-
-small_gicp_relocalization:
-  ros__parameters:
-    use_sim_time: False
-    num_threads: 4                                # GICP 算法在进行并行计算时使用的 CPU 线程数
-    num_neighbors: 15                             # 在为每个点估计协方差时，搜索的最近邻点的数量
-    global_leaf_size: 0.07                        # 全局先验地图的体素下采样网格尺寸 (米)。值越小，地图越稠密，但内存和计算开销越大。
-    registered_leaf_size: 0.07                   # 实时输入点云的体素下采样网格尺寸 (米)。
-    max_dist_sq: 0.8                              # GICP 匹配时用于剔除错误匹配的最大距离平方阈值。超过此距离的点对将被认为是外点 (Outlier)。
-    map_frame: "map"                              # 全局地图坐标系的名称
-    odom_frame: "odom"                            # 里程计坐标系的名称
-    base_frame: "base_footprint"                  # 机器人二维平面投影基座的坐标系名称
-    robot_base_frame: "base_link"                 # 机器人三维物理模型的坐标系名称
-    lidar_frame: "imu_link"                    # 激光雷达传感器的坐标系名称
-    init_pose: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]   # [x, y, z, roll, pitch, yaw] 节点启动时，机器人在 map 坐标系下的初始位姿猜测
-    input_cloud_topic: "registered_scan"          # 订阅的、需要进行重定位的实时点云话题名称
-    # The prior_pcd_file does not need to be specified since it going to be set by defaults in launch.
-    # prior_pcd_file: ""
-
 gb_omni_pid_pursuit_controller:
   ros__parameters:
     move_kp: 1.5                             # 机器人线速度控制的比例增益 (Proportional Gain) 1.1
     move_ki: 0.0                              # 机器人线速度控制的积分增益 (Integral Gain)。通常用于消除稳态误差。
     move_kd: 1.2                              # 机器人线速度控制的微分增益 (Derivative Gain)。用于抑制震荡、提高响应速度
     lookahead_dist: 0.6                        # 纯追踪前视距离(米)。越大越早转向，越小越贴路径。建议 1.0~2.0
-    heading_kp: 2.55                          # 机器人航向角（旋转）控制的比例增益
-    heading_ki: 0.0                           # 机器人航向角控制的积分增益
+    heading_kp: 2.6                          # 机器人航向角（旋转）控制的比例增益
+    heading_ki: 0.007                           # 机器人航向角控制的积分增益
     heading_kd: 0.75                           # 机器人航向角控制的微分增益
     approach_dist: 0.25                        # 接近目标点时的距离阈值 (米)。当机器人距离目标小于此值时，会开始减速。
     min_approach_vel: 0.1                    # 接近目标点时允许的最小线速度 (米/秒)。防止在目标点附近完全停车造成停顿。
@@ -71,10 +52,10 @@ point_lio:
     prop_at_freq_of_imu: True                           # 是否按IMU频率进行传播
     check_satu: True                                    # 是否检查IMU饱和
     init_map_size: 10                                   # 初始地图大小
-    point_filter_num: 4                                 # 点云采样间隔 (Options: 4, 3)
+    point_filter_num: 3                                 # 点云采样间隔 (Options: 4, 3)
     space_down_sample: True                             # 是否开启空间降采样
     filter_size_surf: 0.3                               # 平面点降采样尺寸 (Options: 0.5, 0.3, 0.2, 0.15, 0.1)
-    filter_size_map: 0.3                                # 地图降采样尺寸 (Options: 0.5, 0.3, 0.15, 0.1)
+    filter_size_map: 0.15                                # 地图降采样尺寸 (Options: 0.5, 0.3, 0.15, 0.1)
     ivox_nearby_type: 18                                 # ivox附近搜索类型 (Options: 0, 6, 18, 26)
     runtime_pos_log_enable: False                       # 是否启用运行时位置日志 (Option: True)
 
@@ -102,12 +83,12 @@ point_lio:
     mapping:
       imu_en: True                                    # 是否启用IMU
       extrinsic_est_en: False                         # 是否启用在线外参估计 (for aggressive motion, set this variable False)
-      imu_time_inte: 0.005                            # IMU时间间隔 (1 / frequency of IMU)
+      imu_time_inte: 0.002                            # IMU时间间隔 (1 / frequency of IMU)
       lidar_time_inte: 0.1                            # 雷达时间间隔
       satu_acc: 4.0                                   # 加速度饱和值 (the saturation value of IMU's acceleration)
       satu_gyro: 35.0                                 # 角速度饱和值 (the saturation value of IMU's angular velocity)
       acc_norm: 1.0                                   # 重力加速度单位 (1.0 for g as unit, 9.81 for m/s^2)
-      lidar_meas_cov: 0.01                            # 雷达测量协方差
+      lidar_meas_cov: 0.005                            # 雷达测量协方差
       acc_cov_output: 515.0                           # 加速度输出协方差 
       gyr_cov_output: 1005.0                          # 角速度输出协方差
       b_acc_cov: 5.368e-5                              # 加速度零偏协方差
@@ -118,7 +99,7 @@ point_lio:
       acc_cov_input: 0.1                              # IMU作为输入时的加速度协方差
       plane_thr: 0.1                                  # 平面阈值 (the smaller, the flatter a plane)
       match_s: 81.0                                   # 匹配系数
-      ivox_grid_resolution: 0.5                       # IVOX网格分辨率
+      ivox_grid_resolution: 0.15                       # IVOX网格分辨率
       gravity: [ 0.0, 0.0, -9.810 ]                   # 重力向量 (use when imu_en is False or start from a non-stationary state)
       gravity_init: [ 0.0, 0.0, -9.810 ]              # 初始重力向量 (in the initial IMU frame for unstationary start)
       extrinsic_T: [ 0.011, 0.02329, -0.04412 ]
