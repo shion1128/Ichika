@@ -71,10 +71,10 @@ point_lio:
     prop_at_freq_of_imu: True                           # 是否按IMU频率进行传播
     check_satu: True                                    # 是否检查IMU饱和
     init_map_size: 10                                   # 初始地图大小
-    point_filter_num: 4                                 # 点云采样间隔 (Options: 4, 3)
+    point_filter_num: 3                                 # 点云采样间隔 (Options: 4, 3)
     space_down_sample: True                             # 是否开启空间降采样
     filter_size_surf: 0.3                               # 平面点降采样尺寸 (Options: 0.5, 0.3, 0.2, 0.15, 0.1)
-    filter_size_map: 0.3                                # 地图降采样尺寸 (Options: 0.5, 0.3, 0.15, 0.1)
+    filter_size_map: 0.15                                # 地图降采样尺寸 (Options: 0.5, 0.3, 0.15, 0.1)
     ivox_nearby_type: 18                                 # ivox附近搜索类型 (Options: 0, 6, 18, 26)
     runtime_pos_log_enable: False                       # 是否启用运行时位置日志 (Option: True)
 
@@ -88,7 +88,7 @@ point_lio:
       time_diff_lidar_to_imu: 0.0                     # 雷达到IMU的时间偏移 (Time offset between LiDAR and IMU calibrated by other algorithms)
 
     prior_pcd:
-      enable: false                                    # 是否启用先验地图 (跑 slam_launch.py 建图前必须改回 False)
+      enable: False                                    # 是否启用先验地图 (跑 slam_launch.py 建图前必须改回 False)
       prior_pcd_map_path: "src/point_lio/PCD/scans.pcd" # 先验地图路径 (定位模式会被 launch 的 prior_pcd_file 覆盖)
       init_pose: [ 0.0, 0.0, 0.0 ]                    # 初始位置 x y z，先验地图坐标系下
       init_yaw: 0.0                                   # 初始朝向 yaw (rad)，先验地图坐标系下，绕世界 Z 轴
@@ -107,7 +107,7 @@ point_lio:
       satu_acc: 4.0                                   # 加速度饱和值 (the saturation value of IMU's acceleration)
       satu_gyro: 35.0                                 # 角速度饱和值 (the saturation value of IMU's angular velocity)
       acc_norm: 1.0                                   # 重力加速度单位 (1.0 for g as unit, 9.81 for m/s^2)
-      lidar_meas_cov: 0.01                            # 雷达测量协方差
+      lidar_meas_cov: 0.005                            # 雷达测量协方差
       acc_cov_output: 515.0                           # 加速度输出协方差 
       gyr_cov_output: 1005.0                          # 角速度输出协方差
       b_acc_cov: 5.368e-5                              # 加速度零偏协方差
@@ -118,7 +118,7 @@ point_lio:
       acc_cov_input: 0.1                              # IMU作为输入时的加速度协方差
       plane_thr: 0.1                                  # 平面阈值 (the smaller, the flatter a plane)
       match_s: 81.0                                   # 匹配系数
-      ivox_grid_resolution: 0.5                       # IVOX网格分辨率
+      ivox_grid_resolution: 0.15                       # IVOX网格分辨率
       gravity: [ 0.0, 0.0, -9.810 ]                   # 重力向量 (use when imu_en is False or start from a non-stationary state)
       gravity_init: [ 0.0, 0.0, -9.810 ]              # 初始重力向量 (in the initial IMU frame for unstationary start)
       extrinsic_T: [ 0.011, 0.02329, -0.04412 ]
