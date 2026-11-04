@@ -136,7 +136,7 @@ point_lio:
       tf_send_en: False                               # 是否发布TF (True: send transform from 'camera_init' to 'aft_mapped')
 
     pcd_save:
-      pcd_save_en: False                               # 是否保存PCD文件
+      pcd_save_en: True                               # 是否保存PCD文件
       interval: -1                                    # PCD保存间隔 (-1 : all frames will be saved in ONE pcd file)
       dir: "src/gb2026_bringup/pcd"    # <--- 你现在可以把地图指派到任何你想去的地方了！
 
