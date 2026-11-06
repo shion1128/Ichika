@@ -61,8 +61,8 @@ gb_omni_pid_pursuit_controller:
     max_linear_vel_: 1.2                      # 最大线速度 (m/s)
     max_angular_vel_: 1.85                     # ★ 最大角速度 (rad/s)，默认1.0，调大转更快
     max_accel_: 0.75                           # ★ 加速度上限 (m/s²)，防止速度突变
-    xy_goal_tolerance: 0.012                  # ★ 平地位置容差(米)
-    yaw_goal_tolerance: 0.02                 # ★ 平地航向容差(rad), ~0.57°
+    xy_goal_tolerance: 0.01                  # ★ 平地位置容差(米)
+    yaw_goal_tolerance: 0.01                 # ★ 平地航向容差(rad),
     settle_ticks: 5                          # ★ 平地稳定拍数, 7拍=140ms
 
 point_lio:

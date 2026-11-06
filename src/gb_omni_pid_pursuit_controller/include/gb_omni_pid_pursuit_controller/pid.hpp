@@ -25,6 +25,7 @@ namespace gb_omni_pid_pursuit_controller
         double kd_;
         double pre_error_;
         double integral_;
+        bool first_{true}; // 标记是否为第一次运行，用于初始化上一时刻误差
 
         // ===== 本次工业级升级新增的变量 =====
         double pre_derivative_{0.0}; // 记录上一时刻的滤波后微分值，用于低通滤波计算
