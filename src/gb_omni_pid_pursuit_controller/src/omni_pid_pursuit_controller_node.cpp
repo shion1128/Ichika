@@ -82,6 +82,8 @@ namespace gb_omni_pid_pursuit_controller
         approach_velocity_scaling_dist_ = this->declare_parameter("approach_dist", 0.4);
         // 接近目标时的最小保护速度，防止速度缩放后变为0导致机器人停滞
         min_approach_linear_velocity_ = this->declare_parameter("min_approach_vel", 0.08);
+        // 航向环的最小角速度兜底 (rad/s)，防止小航向误差时底盘静摩擦推不动
+        min_approach_angular_vel_ = this->declare_parameter("min_approach_angular_vel", 0.3);
 
         // 5. 根据参数初始化两个 PID 控制器实例
         double dt = 1.0 / control_frequency_;
@@ -445,6 +447,16 @@ namespace gb_omni_pid_pursuit_controller
                 }
             }
 
+            const double abs_yaw_err = std::fabs(yaw_error);
+            if (abs_yaw_err > yaw_goal_tolerance_)
+            {
+                const double min_ang_vel = std::min(min_approach_angular_vel_, max_angular_vel_);
+                if (std::fabs(ang_vel) < min_ang_vel)
+                {
+                    ang_vel = std::copysign(min_ang_vel, -yaw_error);
+                }
+            }
+
             // 简易加速度限幅 (Slew Rate Limiter)，防止速度突变
             double max_vel_change = max_accel_ * dt;
             if (lin_vel > last_lin_vel_ + max_vel_change)
@@ -555,6 +567,8 @@ namespace gb_omni_pid_pursuit_controller
                 approach_velocity_scaling_dist_ = param.as_double();
             else if (param.get_name() == "min_approach_vel")
                 min_approach_linear_velocity_ = param.as_double();
+            else if (param.get_name() == "min_approach_angular_vel")
+                min_approach_angular_vel_ = param.as_double();
             else if (param.get_name() == "max_linear_vel_")
                 max_lin_vel = param.as_double();
             else if (param.get_name() == "max_angular_vel_")

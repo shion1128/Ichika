@@ -87,6 +87,8 @@ namespace gb_omni_pid_pursuit_controller
 
         double approach_velocity_scaling_dist_{0.4};
         double min_approach_linear_velocity_{0.01};
+        // 航向环的"最小角速度"兜底 (rad/s)：小航向误差时防止底盘静摩擦把指令挡住
+        double min_approach_angular_vel_{0.3};
 
         void time_callback();
     };

@@ -58,6 +58,7 @@ gb_omni_pid_pursuit_controller:
     heading_kd: 0.55                           # 机器人航向角控制的微分增益
     approach_dist: 0.25                        # 接近目标点时的距离阈值 (米)。当机器人距离目标小于此值时，会开始减速。
     min_approach_vel: 0.05                    # 接近目标点时允许的最小线速度 (米/秒)。防止在目标点附近完全停车造成停顿。
+    min_approach_angular_vel: 0.05              # ★ 航向环最小角速度兜底 (rad/s)。小航向误差时防止底盘静摩擦挡住转向；需按实测最小可转动角速度调整
     max_linear_vel_: 1.6                      # 最大线速度 (m/s)
     max_angular_vel_: 2.05                     # ★ 最大角速度 (rad/s)，默认1.0，调大转更快
     max_accel_: 1.0                           # ★ 加速度上限 (m/s²)，防止速度突变
