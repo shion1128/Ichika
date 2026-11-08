@@ -36,9 +36,10 @@ namespace gb_omni_pid_pursuit_controller
     {
         double raw_error = set_point - pv;
 
-        double raw_derivative = (raw_error - pre_error_) / dt_;
+        double raw_derivative = first_ ? 0.0 : (raw_error - pre_error_) / dt_;
 
         double filtered_derivative = alpha_ * raw_derivative + (1.0 - alpha_) * pre_derivative_;
+        first_ = false;
 
         double d_out = kd_ * filtered_derivative;
 
@@ -85,6 +86,7 @@ namespace gb_omni_pid_pursuit_controller
             output = min_;
 
         // 更新上一时刻误差，供下次微分计算使用
+        pre_derivative_ = filtered_derivative;
         pre_error_ = raw_error;
         return output;
     }
@@ -123,6 +125,8 @@ namespace gb_omni_pid_pursuit_controller
     {
         pre_error_ = 0.0;
         integral_ = 0.0;
+        pre_derivative_ = 0.0;
+        first_ = true;
     }
 
 } // namespace gb_omni_pid_pursuit_controller
